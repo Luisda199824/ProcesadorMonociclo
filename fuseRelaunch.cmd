@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "C:/Users/utp/Desktop/Luisda/Procesador/TB_InstructionMemory_isim_beh.exe" -prj "C:/Users/utp/Desktop/Luisda/Procesador/TB_InstructionMemory_beh.prj" "work.TB_InstructionMemory" 
+-intstyle "ise" -incremental -o "C:/Users/utp.CRIE/Desktop/Procesador/TB_registerFile_isim_beh.exe" -prj "C:/Users/utp.CRIE/Desktop/Procesador/TB_registerFile_beh.prj" "work.TB_registerFile" 
