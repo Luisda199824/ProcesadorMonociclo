@@ -22,9 +22,11 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Procesador.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TB_registerFile_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TB_Alu_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TB_Alu_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="TB_Alu_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TB_Alu_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TB_registerFile_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="TB_registerFile_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TB_registerFile_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
@@ -36,15 +38,18 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1475790024" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1475790024">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1475790221" xil_pn:in_ck="5745452691994666515" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1475790221">
+    <transform xil_pn:end_ts="1475791174" xil_pn:in_ck="1421510282603184300" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1475791174">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Alu.vhd"/>
       <outfile xil_pn:name="InstructionMemory.vhd"/>
       <outfile xil_pn:name="Mux32B.vhd"/>
       <outfile xil_pn:name="ProgrammingCounter.vhd"/>
       <outfile xil_pn:name="SignExtender.vhd"/>
       <outfile xil_pn:name="Sumador32B.vhd"/>
+      <outfile xil_pn:name="TB_Alu.vhd"/>
       <outfile xil_pn:name="TB_InstructionMemory.vhd"/>
       <outfile xil_pn:name="TB_Mux32B.vhd"/>
       <outfile xil_pn:name="TB_ProgrammingCounter.vhd"/>
@@ -53,11 +58,11 @@
       <outfile xil_pn:name="TB_registerFile.vhd"/>
       <outfile xil_pn:name="registerFile.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1475790033" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-8084469561709319302" xil_pn:start_ts="1475790033">
+    <transform xil_pn:end_ts="1475791128" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="8035998388057433975" xil_pn:start_ts="1475791128">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1475790033" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-3224477932493009348" xil_pn:start_ts="1475790033">
+    <transform xil_pn:end_ts="1475791128" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-4489113219996215431" xil_pn:start_ts="1475791128">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -65,14 +70,16 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1475790224" xil_pn:in_ck="5745452691994666515" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1475790224">
+    <transform xil_pn:end_ts="1475791175" xil_pn:in_ck="1421510282603184300" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1475791175">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Alu.vhd"/>
       <outfile xil_pn:name="InstructionMemory.vhd"/>
       <outfile xil_pn:name="Mux32B.vhd"/>
       <outfile xil_pn:name="ProgrammingCounter.vhd"/>
       <outfile xil_pn:name="SignExtender.vhd"/>
       <outfile xil_pn:name="Sumador32B.vhd"/>
+      <outfile xil_pn:name="TB_Alu.vhd"/>
       <outfile xil_pn:name="TB_InstructionMemory.vhd"/>
       <outfile xil_pn:name="TB_Mux32B.vhd"/>
       <outfile xil_pn:name="TB_ProgrammingCounter.vhd"/>
@@ -81,24 +88,24 @@
       <outfile xil_pn:name="TB_registerFile.vhd"/>
       <outfile xil_pn:name="registerFile.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1475790227" xil_pn:in_ck="5745452691994666515" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="790203848288657804" xil_pn:start_ts="1475790224">
+    <transform xil_pn:end_ts="1475791178" xil_pn:in_ck="1421510282603184300" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-5016070450394685466" xil_pn:start_ts="1475791175">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="TB_registerFile_beh.prj"/>
-      <outfile xil_pn:name="TB_registerFile_isim_beh.exe"/>
+      <outfile xil_pn:name="TB_Alu_beh.prj"/>
+      <outfile xil_pn:name="TB_Alu_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1475790227" xil_pn:in_ck="-3693491227610633591" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3720238949917176593" xil_pn:start_ts="1475790227">
+    <transform xil_pn:end_ts="1475791178" xil_pn:in_ck="4418786486165869039" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-5674052645902397303" xil_pn:start_ts="1475791178">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="TB_registerFile_isim_beh.wdb"/>
+      <outfile xil_pn:name="TB_Alu_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
     </transform>

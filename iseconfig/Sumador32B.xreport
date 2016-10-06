@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-10-06T16:40:16</DateModified>
+  <DateModified>2016-10-06T16:51:27</DateModified>
   <ModuleName>Sumador32B</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/utp.CRIE/Desktop/Procesador/iseconfig/Sumador32B.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/utp.CRIE/Desktop/Procesador</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/utp.CRIE/Desktop/Procesador\</ImplementationReportsDirectory>
   <DateInitialized>2016-10-06T16:40:15</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <!--This is an ISE project configuration file.-->
 <!--It holds project specific layout data for the projectmgr plugin.-->
 <!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
@@ -9,13 +9,13 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>registerFile - Behavioral (C:/Users/utp.CRIE/Desktop/Procesador/registerFile.vhd)</SelectedItem>
+         <SelectedItem>Sumador32B - Behavioral (C:/Users/utp.CRIE/Desktop/Procesador/Sumador32B.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001b6000000020000000000000000000000000200000064ffffffff000000810000000300000002000001b60000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>registerFile - Behavioral (C:/Users/utp.CRIE/Desktop/Procesador/registerFile.vhd)</CurrentItem>
+      <CurrentItem>Sumador32B - Behavioral (C:/Users/utp.CRIE/Desktop/Procesador/Sumador32B.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
@@ -61,6 +61,7 @@
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/TB_Alu - behavior C:|Users|utp.CRIE|Desktop|Procesador|TB_Alu.vhd</ClosedNode>
          <ClosedNode>/TB_InstructionMemory - behavior C:|Users|utp.CRIE|Desktop|Procesador|TB_InstructionMemory.vhd</ClosedNode>
          <ClosedNode>/TB_Mux32B - behavior C:|Users|utp.CRIE|Desktop|Procesador|TB_Mux32B.vhd</ClosedNode>
          <ClosedNode>/TB_ProgrammingCounter - behavior C:|Users|utp.CRIE|Desktop|Procesador|TB_ProgrammingCounter.vhd</ClosedNode>
@@ -69,13 +70,13 @@
          <ClosedNode>/TB_registerFile - behavior C:|Users|utp.CRIE|Desktop|Procesador|TB_registerFile.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>TB_registerFile - behavior (C:/Users/utp.CRIE/Desktop/Procesador/TB_registerFile.vhd)</SelectedItem>
+         <SelectedItem>TB_Alu - behavior (C:/Users/utp.CRIE/Desktop/Procesador/TB_Alu.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001ae000000020000000000000000000000000200000064ffffffff000000810000000300000002000001ae0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>TB_registerFile - behavior (C:/Users/utp.CRIE/Desktop/Procesador/TB_registerFile.vhd)</CurrentItem>
+      <CurrentItem>TB_Alu - behavior (C:/Users/utp.CRIE/Desktop/Procesador/TB_Alu.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -106,4 +107,18 @@
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
    <CurrentView>Behavioral Simulation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
 </Project>
