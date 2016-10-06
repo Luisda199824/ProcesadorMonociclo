@@ -5,7 +5,6 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity SignExtender is
     Port ( A : in  STD_LOGIC_VECTOR (12 downto 0);
-			  clk : in  STD_LOGIC;
            SEOut : out  STD_LOGIC_VECTOR (31 downto 0));
 end SignExtender;
 
@@ -18,7 +17,7 @@ begin
 
 most <= A(12);
 
-process(clk)
+process(A)
 	begin
 		if (most = '0') then
 			SEOut <= "0000000000000000000"&A;

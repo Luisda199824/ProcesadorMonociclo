@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+ProgrammingCounter instance_name (
+    .clk(clk), 
+    .rst(rst), 
+    .dato(dato), 
+    .PCOut(PCOut)
+    );
+
+

@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+UnityControl instance_name (
+    .Op(Op), 
+    .Op3(Op3), 
+    .AluOp(AluOp)
+    );
+
+

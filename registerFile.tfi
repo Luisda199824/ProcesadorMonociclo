@@ -1,0 +1,15 @@
+
+
+
+// Instantiate the module
+registerFile instance_name (
+    .rs1(rs1), 
+    .rs2(rs2), 
+    .rd(rd), 
+    .rst(rst), 
+    .dataToWrite(dataToWrite), 
+    .CRs1(CRs1), 
+    .CRs2(CRs2)
+    );
+
+

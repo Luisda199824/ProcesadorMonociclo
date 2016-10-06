@@ -1,0 +1,2 @@
+vhdtdtfi -prj Procesador -o C:/Users/utp.CRIE/Desktop/Procesador__/ProgrammingCounter.tfi -module ProgrammingCounter -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror -lib work ProgrammingCounter.vhd 
+vhdtdtfi -prj Procesador -o C:/Users/utp.CRIE/Desktop/Procesador__/ProgrammingCounter.tfi -module ProgrammingCounter -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror -lib work ProgrammingCounter.vhd 
