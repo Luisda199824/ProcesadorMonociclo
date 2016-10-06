@@ -26,6 +26,7 @@
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TB_Alu_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="TB_Alu_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TB_Alu_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TB_UnityControl_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TB_registerFile_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TB_registerFile_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
@@ -40,7 +41,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1475791174" xil_pn:in_ck="1421510282603184300" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1475791174">
+    <transform xil_pn:end_ts="1475792126" xil_pn:in_ck="-7384435090714542219" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1475792126">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Alu.vhd"/>
@@ -55,16 +56,20 @@
       <outfile xil_pn:name="TB_ProgrammingCounter.vhd"/>
       <outfile xil_pn:name="TB_SignExtend.vhd"/>
       <outfile xil_pn:name="TB_Sumador32B.vhd"/>
+      <outfile xil_pn:name="TB_UnityControl.vhd"/>
       <outfile xil_pn:name="TB_registerFile.vhd"/>
+      <outfile xil_pn:name="UnityControl.vhd"/>
       <outfile xil_pn:name="registerFile.vhd"/>
     </transform>
     <transform xil_pn:end_ts="1475791128" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="8035998388057433975" xil_pn:start_ts="1475791128">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
     <transform xil_pn:end_ts="1475791128" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-4489113219996215431" xil_pn:start_ts="1475791128">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
     <transform xil_pn:end_ts="1475790033" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="686320675878782253" xil_pn:start_ts="1475790033">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -73,6 +78,9 @@
     <transform xil_pn:end_ts="1475791175" xil_pn:in_ck="1421510282603184300" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1475791175">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputAdded"/>
       <outfile xil_pn:name="Alu.vhd"/>
       <outfile xil_pn:name="InstructionMemory.vhd"/>
       <outfile xil_pn:name="Mux32B.vhd"/>
@@ -91,6 +99,8 @@
     <transform xil_pn:end_ts="1475791178" xil_pn:in_ck="1421510282603184300" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-5016070450394685466" xil_pn:start_ts="1475791175">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="TB_Alu_beh.prj"/>
@@ -103,6 +113,8 @@
     <transform xil_pn:end_ts="1475791178" xil_pn:in_ck="4418786486165869039" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-5674052645902397303" xil_pn:start_ts="1475791178">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="TB_Alu_isim_beh.wdb"/>
