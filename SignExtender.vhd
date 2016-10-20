@@ -10,16 +10,11 @@ end SignExtender;
 
 architecture Behavioral of SignExtender is
 
-signal most : std_logic := '0'; -- Señal que toma el bit más significativo de A
-signal aux : std_logic_vector(31 downto 0) := (others => '0');
-
 begin
-
-most <= A(12);
 
 process(A)
 	begin
-		if (most = '0') then
+		if (A(12) = '0') then
 			SEOut <= "0000000000000000000"&A;
 		else
 			SEOut <= "1111111111111111111"&A;
