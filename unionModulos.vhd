@@ -9,8 +9,9 @@ end unionModulos;
 
 architecture Behavioral of unionModulos is
 
-	signal aux1, aux2, aux3, aux4, aux6, aux7, aux8, aux9, aux10: std_logic_vector(31 downto 0) := (others => '0');
+	signal aux1, aux2, aux3, instruction, crs1, aux7, crs2, aux9, aux10: std_logic_vector(31 downto 0) := (others => '0');
 	signal aux5:  std_logic_vector(5 downto 0) := (others => '0');
+	signal rs1, rs2, rd : std_logic_vector(4 downto 0) := (others => '0');
 
 	component ProgrammingCounter
 		port (
@@ -101,41 +102,45 @@ begin
 	Inst_instructionMemory: instructionMemory port map (
 		address => aux3,
 		rst => rst,
-		outInstruction => aux4
+		outInstruction => instruction
 	);
 	
+	rs1 <= instruction(18 downto 14);
+	rs2 <= instruction(4 downto 0);
+	rd <= instruction(29 downto 25);
+	
 	Inst_register_file: registerFile port map(
-		rs1 => aux4(18 downto 14),
-		rs2 => aux4(4 downto 0),
-		rd => aux4(29 downto 25),
+		rs1 => rs1,
+		rs2 => rs2,
+		rd => rd,
 		rst => rst,
 		dataToWrite => aux9,
-		CRs1 => aux6,
+		CRs1 => crs1,
 		CRs2 => aux7
 	);
 	
 	Inst_UC: UnityControl Port Map(
-		Op => aux4(31 downto 30),
-	   Op3=>aux4(24 downto 19),
-      AluOp =>aux5
+		Op => instruction(31 downto 30),
+	   Op3=> instruction(24 downto 19),
+      AluOp => aux5
 	);
 	
 	Inst_Sign_ext_unit: SignExtender port map (
-		A => aux4(12 downto 0),
+		A => instruction(12 downto 0),
 		SEOut => aux10
 	);
 	
 	Inst_mux32b: Mux32B port map (
 		A => aux7,
 		B => aux10,
-		Sc => aux4(13),
-		MuxOut => aux8
+		Sc => instruction(13),
+		MuxOut => crs2
 	);
 	
 	Inst_ALU: Alu port map (
 		AluOp => aux5,
-		rs1 => aux6,
-		rs2 => aux8,
+		rs1 => crs1,
+		rs2 => crs2,
 		AluResult => aux9
 	);
 	

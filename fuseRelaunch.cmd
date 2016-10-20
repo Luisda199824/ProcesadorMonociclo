@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "C:/Users/utp.CRIE/Desktop/Procesador/TB_UnityControl_isim_beh.exe" -prj "C:/Users/utp.CRIE/Desktop/Procesador/TB_UnityControl_beh.prj" "work.TB_UnityControl" 
+-intstyle "ise" -incremental -o "C:/Users/Usuario UTP/Luisda/ProcesadorMonociclo/TB_Procesador_isim_beh.exe" -prj "C:/Users/Usuario UTP/Luisda/ProcesadorMonociclo/TB_Procesador_beh.prj" "TB_Procesador" 

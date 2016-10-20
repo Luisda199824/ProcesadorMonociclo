@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/utp.CRIE/Desktop/Procesador/registerFile.vhd";
+static const char *ng0 = "C:/Users/Usuario UTP/Luisda/ProcesadorMonociclo/registerFile.vhd";
 extern char *IEEE_P_3620187407;
 
 int ieee_p_3620187407_sub_514432868_3965413181(char *, char *, char *);
@@ -65,7 +65,7 @@ LAB4:    xsi_set_current_line(63, ng0);
     t2 = *((char **)t1);
     t1 = (t0 + 1032U);
     t5 = *((char **)t1);
-    t1 = (t0 + 6388U);
+    t1 = (t0 + 6520U);
     t10 = ieee_p_3620187407_sub_514432868_3965413181(IEEE_P_3620187407, t5, t1);
     t11 = (t10 - 0);
     t12 = (t11 * 1);
@@ -85,7 +85,7 @@ LAB4:    xsi_set_current_line(63, ng0);
     t2 = *((char **)t1);
     t1 = (t0 + 1192U);
     t5 = *((char **)t1);
-    t1 = (t0 + 6404U);
+    t1 = (t0 + 6536U);
     t10 = ieee_p_3620187407_sub_514432868_3965413181(IEEE_P_3620187407, t5, t1);
     t11 = (t10 - 0);
     t12 = (t11 * 1);
@@ -103,8 +103,8 @@ LAB4:    xsi_set_current_line(63, ng0);
     xsi_set_current_line(65, ng0);
     t1 = (t0 + 1352U);
     t2 = *((char **)t1);
-    t1 = (t0 + 6420U);
-    t5 = (t0 + 7644);
+    t1 = (t0 + 6552U);
+    t5 = (t0 + 7776);
     t7 = (t17 + 0U);
     t8 = (t7 + 0U);
     *((int *)t8) = 0;
@@ -155,7 +155,7 @@ LAB5:    xsi_set_current_line(66, ng0);
     t9 = *((char **)t8);
     t8 = (t0 + 1352U);
     t15 = *((char **)t8);
-    t8 = (t0 + 6420U);
+    t8 = (t0 + 6552U);
     t11 = ieee_p_3620187407_sub_514432868_3965413181(IEEE_P_3620187407, t15, t8);
     t18 = (t11 - 0);
     t12 = (t18 * 1);

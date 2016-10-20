@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Reading design: unionModulos.prj
 
@@ -104,25 +104,24 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/Users/utp.CRIE/Desktop/Procesador__/ProgrammingCounter.vhd" in Library work.
+Compiling vhdl file "C:/Users/Usuario UTP/Luisda/ProcesadorMonociclo/ProgrammingCounter.vhd" in Library work.
 Architecture behavioral of Entity programmingcounter is up to date.
-Compiling vhdl file "C:/Users/utp.CRIE/Desktop/Procesador__/Sumador32B.vhd" in Library work.
+Compiling vhdl file "C:/Users/Usuario UTP/Luisda/ProcesadorMonociclo/Sumador32B.vhd" in Library work.
 Architecture behavioral of Entity sumador32b is up to date.
-Compiling vhdl file "C:/Users/utp.CRIE/Desktop/Procesador__/InstructionMemory.vhd" in Library work.
+Compiling vhdl file "C:/Users/Usuario UTP/Luisda/ProcesadorMonociclo/InstructionMemory.vhd" in Library work.
 Architecture arqinstructionmemory of Entity instructionmemory is up to date.
-Compiling vhdl file "C:/Users/utp.CRIE/Desktop/Procesador__/registerFile.vhd" in Library work.
+Compiling vhdl file "C:/Users/Usuario UTP/Luisda/ProcesadorMonociclo/registerFile.vhd" in Library work.
 Architecture behavioral of Entity registerfile is up to date.
-Compiling vhdl file "C:/Users/utp.CRIE/Desktop/Procesador__/UnityControl.vhd" in Library work.
+Compiling vhdl file "C:/Users/Usuario UTP/Luisda/ProcesadorMonociclo/UnityControl.vhd" in Library work.
 Architecture behavioral of Entity unitycontrol is up to date.
-Compiling vhdl file "C:/Users/utp.CRIE/Desktop/Procesador__/SignExtender.vhd" in Library work.
+Compiling vhdl file "C:/Users/Usuario UTP/Luisda/ProcesadorMonociclo/SignExtender.vhd" in Library work.
 Architecture behavioral of Entity signextender is up to date.
-Compiling vhdl file "C:/Users/utp.CRIE/Desktop/Procesador__/Mux32B.vhd" in Library work.
+Compiling vhdl file "C:/Users/Usuario UTP/Luisda/ProcesadorMonociclo/Mux32B.vhd" in Library work.
 Architecture behavioral of Entity mux32b is up to date.
-Compiling vhdl file "C:/Users/utp.CRIE/Desktop/Procesador__/Alu.vhd" in Library work.
+Compiling vhdl file "C:/Users/Usuario UTP/Luisda/ProcesadorMonociclo/Alu.vhd" in Library work.
 Architecture behavioral of Entity alu is up to date.
-Compiling vhdl file "C:/Users/utp.CRIE/Desktop/Procesador__/unionModulos.vhd" in Library work.
-Entity <unionmodulos> compiled.
-Entity <unionmodulos> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/Usuario UTP/Luisda/ProcesadorMonociclo/unionModulos.vhd" in Library work.
+Architecture behavioral of Entity unionmodulos is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -153,7 +152,7 @@ Analyzing Entity <unionModulos> in library <work> (Architecture <behavioral>).
 Entity <unionModulos> analyzed. Unit <unionModulos> generated.
 
 Analyzing Entity <ProgrammingCounter> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "C:/Users/utp.CRIE/Desktop/Procesador__/ProgrammingCounter.vhd" line 17: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "C:/Users/Usuario UTP/Luisda/ProcesadorMonociclo/ProgrammingCounter.vhd" line 17: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <dato>
 Entity <ProgrammingCounter> analyzed. Unit <ProgrammingCounter> generated.
 
@@ -161,12 +160,12 @@ Analyzing Entity <Sumador32B> in library <work> (Architecture <behavioral>).
 Entity <Sumador32B> analyzed. Unit <Sumador32B> generated.
 
 Analyzing Entity <instructionMemory> in library <work> (Architecture <arqinstructionmemory>).
-WARNING:Xst:790 - "C:/Users/utp.CRIE/Desktop/Procesador__/InstructionMemory.vhd" line 40: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "C:/Users/Usuario UTP/Luisda/ProcesadorMonociclo/InstructionMemory.vhd" line 40: Index value(s) does not match array range, simulation mismatch.
 INFO:Xst:1433 - Contents of array <instructions> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
 Entity <instructionMemory> analyzed. Unit <instructionMemory> generated.
 
 Analyzing Entity <registerFile> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "C:/Users/utp.CRIE/Desktop/Procesador__/registerFile.vhd" line 57: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "C:/Users/Usuario UTP/Luisda/ProcesadorMonociclo/registerFile.vhd" line 57: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <ceros>, <regFile>
 Entity <registerFile> analyzed. Unit <registerFile> generated.
 
@@ -174,7 +173,7 @@ Analyzing Entity <UnityControl> in library <work> (Architecture <behavioral>).
 Entity <UnityControl> analyzed. Unit <UnityControl> generated.
 
 Analyzing Entity <SignExtender> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "C:/Users/utp.CRIE/Desktop/Procesador__/SignExtender.vhd" line 20: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "C:/Users/Usuario UTP/Luisda/ProcesadorMonociclo/SignExtender.vhd" line 20: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <most>
 Entity <SignExtender> analyzed. Unit <SignExtender> generated.
 
@@ -192,13 +191,13 @@ Entity <Alu> analyzed. Unit <Alu> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <ProgrammingCounter>.
-    Related source file is "C:/Users/utp.CRIE/Desktop/Procesador__/ProgrammingCounter.vhd".
+    Related source file is "C:/Users/Usuario UTP/Luisda/ProcesadorMonociclo/ProgrammingCounter.vhd".
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 Unit <ProgrammingCounter> synthesized.
 
 
 Synthesizing Unit <Sumador32B>.
-    Related source file is "C:/Users/utp.CRIE/Desktop/Procesador__/Sumador32B.vhd".
+    Related source file is "C:/Users/Usuario UTP/Luisda/ProcesadorMonociclo/Sumador32B.vhd".
     Found 32-bit adder for signal <SumOut>.
     Summary:
 	inferred   1 Adder/Subtractor(s).
@@ -206,7 +205,7 @@ Unit <Sumador32B> synthesized.
 
 
 Synthesizing Unit <instructionMemory>.
-    Related source file is "C:/Users/utp.CRIE/Desktop/Procesador__/InstructionMemory.vhd".
+    Related source file is "C:/Users/Usuario UTP/Luisda/ProcesadorMonociclo/InstructionMemory.vhd".
 WARNING:Xst:647 - Input <address<31:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:1781 - Signal <instructions> is used but never assigned. Tied to default value.
     Found 32x32-bit ROM for signal <$varindex0000> created at line 40.
@@ -216,7 +215,7 @@ Unit <instructionMemory> synthesized.
 
 
 Synthesizing Unit <registerFile>.
-    Related source file is "C:/Users/utp.CRIE/Desktop/Procesador__/registerFile.vhd".
+    Related source file is "C:/Users/Usuario UTP/Luisda/ProcesadorMonociclo/registerFile.vhd".
 WARNING:Xst:653 - Signal <ceros> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
 WARNING:Xst:737 - Found 32-bit latch for signal <regFile_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 32-bit latch for signal <regFile_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -258,24 +257,24 @@ Unit <registerFile> synthesized.
 
 
 Synthesizing Unit <UnityControl>.
-    Related source file is "C:/Users/utp.CRIE/Desktop/Procesador__/UnityControl.vhd".
+    Related source file is "C:/Users/Usuario UTP/Luisda/ProcesadorMonociclo/UnityControl.vhd".
 WARNING:Xst:737 - Found 6-bit latch for signal <AluOp>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 Unit <UnityControl> synthesized.
 
 
 Synthesizing Unit <SignExtender>.
-    Related source file is "C:/Users/utp.CRIE/Desktop/Procesador__/SignExtender.vhd".
+    Related source file is "C:/Users/Usuario UTP/Luisda/ProcesadorMonociclo/SignExtender.vhd".
 WARNING:Xst:1780 - Signal <aux> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 Unit <SignExtender> synthesized.
 
 
 Synthesizing Unit <Mux32B>.
-    Related source file is "C:/Users/utp.CRIE/Desktop/Procesador__/Mux32B.vhd".
+    Related source file is "C:/Users/Usuario UTP/Luisda/ProcesadorMonociclo/Mux32B.vhd".
 Unit <Mux32B> synthesized.
 
 
 Synthesizing Unit <Alu>.
-    Related source file is "C:/Users/utp.CRIE/Desktop/Procesador__/Alu.vhd".
+    Related source file is "C:/Users/Usuario UTP/Luisda/ProcesadorMonociclo/Alu.vhd".
     Found 32-bit addsub for signal <AluResult$addsub0000>.
     Found 32-bit xor2 for signal <AluResult$xor0000> created at line 29.
     Summary:
@@ -284,7 +283,7 @@ Unit <Alu> synthesized.
 
 
 Synthesizing Unit <unionModulos>.
-    Related source file is "C:/Users/utp.CRIE/Desktop/Procesador__/unionModulos.vhd".
+    Related source file is "C:/Users/Usuario UTP/Luisda/ProcesadorMonociclo/unionModulos.vhd".
 Unit <unionModulos> synthesized.
 
 INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
@@ -340,10 +339,10 @@ Macro Statistics
 =========================================================================
 INFO:Xst:2261 - The FF/Latch <AluOp_3> in Unit <UnityControl> is equivalent to the following 2 FFs/Latches, which will be removed : <AluOp_4> <AluOp_5> 
 WARNING:Xst:1710 - FF/Latch <AluOp_3> (without init value) has a constant value of 0 in block <UnityControl>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2170 - Unit unionModulos : the following signal(s) form a combinatorial loop: Inst_sum32b/Madd_SumOut_cy<1>, aux3<4>, aux4<18>, aux1<4>, aux2<0>, Inst_sum32b/Madd_SumOut_cy<2>, Inst_instructionMemory/Mrom__varindex000018, aux2<4>, Inst_sum32b/Madd_SumOut_cy<3>, Inst_sum32b/Madd_SumOut_lut<0>, Inst_sum32b/Madd_SumOut_cy<0>, aux1<0>.
-WARNING:Xst:2170 - Unit unionModulos : the following signal(s) form a combinatorial loop: aux2<1>, aux4<17>, Inst_instructionMemory/Mrom__varindex000017, aux3<1>, aux1<1>.
-WARNING:Xst:2170 - Unit unionModulos : the following signal(s) form a combinatorial loop: aux3<2>, aux1<2>, Inst_instructionMemory/Mrom__varindex000015, aux4<15>, aux2<2>.
-WARNING:Xst:2170 - Unit unionModulos : the following signal(s) form a combinatorial loop: Inst_instructionMemory/Mrom__varindex000014, aux3<3>, aux1<3>, aux2<3>, aux4<14>.
+WARNING:Xst:2170 - Unit unionModulos : the following signal(s) form a combinatorial loop: aux3<4>, aux4<18>, aux1<4>, aux2<4>, Inst_sum32b/Madd_SumOut_cy<2>, Inst_sum32b/Madd_SumOut_cy<3>, Inst_sum32b/Madd_SumOut_cy<0>, Inst_instructionMemory/Mrom__varindex000018, aux1<0>, Inst_sum32b/Madd_SumOut_lut<0>, Inst_sum32b/Madd_SumOut_cy<1>, aux2<0>.
+WARNING:Xst:2170 - Unit unionModulos : the following signal(s) form a combinatorial loop: aux4<17>, Inst_instructionMemory/Mrom__varindex000017, aux3<1>, aux1<1>, aux2<1>.
+WARNING:Xst:2170 - Unit unionModulos : the following signal(s) form a combinatorial loop: aux3<2>, aux1<2>, aux4<15>, aux2<2>, Inst_instructionMemory/Mrom__varindex000015.
+WARNING:Xst:2170 - Unit unionModulos : the following signal(s) form a combinatorial loop: aux3<3>, aux1<3>, Inst_instructionMemory/Mrom__varindex000014, aux2<3>, aux4<14>.
 
 Optimizing unit <unionModulos> ...
 
@@ -1020,7 +1019,7 @@ Delay:               10.344ns (Levels of Logic = 40)
      MUXF5:I0->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0001_8_f5 (Inst_register_file/Mmux__varindex0001_8_f5)
      MUXF6:I0->O           1   0.451   0.000  Inst_register_file/Mmux__varindex0001_6_f6 (Inst_register_file/Mmux__varindex0001_6_f6)
      MUXF7:I0->O           1   0.451   0.360  Inst_register_file/Mmux__varindex0001_4_f7 (Inst_register_file/Mmux__varindex0001_4_f7)
-     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (aux8<0>)
+     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (crs2<0>)
      LUT3:I2->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -1081,7 +1080,7 @@ Delay:               10.305ns (Levels of Logic = 40)
      MUXF5:I0->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0001_8_f5 (Inst_register_file/Mmux__varindex0001_8_f5)
      MUXF6:I0->O           1   0.451   0.000  Inst_register_file/Mmux__varindex0001_6_f6 (Inst_register_file/Mmux__varindex0001_6_f6)
      MUXF7:I0->O           1   0.451   0.360  Inst_register_file/Mmux__varindex0001_4_f7 (Inst_register_file/Mmux__varindex0001_4_f7)
-     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (aux8<0>)
+     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (crs2<0>)
      LUT3:I2->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -1142,7 +1141,7 @@ Delay:               10.344ns (Levels of Logic = 40)
      MUXF5:I1->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0001_8_f5 (Inst_register_file/Mmux__varindex0001_8_f5)
      MUXF6:I0->O           1   0.451   0.000  Inst_register_file/Mmux__varindex0001_6_f6 (Inst_register_file/Mmux__varindex0001_6_f6)
      MUXF7:I0->O           1   0.451   0.360  Inst_register_file/Mmux__varindex0001_4_f7 (Inst_register_file/Mmux__varindex0001_4_f7)
-     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (aux8<0>)
+     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (crs2<0>)
      LUT3:I2->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -1203,7 +1202,7 @@ Delay:               10.305ns (Levels of Logic = 40)
      MUXF5:I1->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0001_8_f5 (Inst_register_file/Mmux__varindex0001_8_f5)
      MUXF6:I0->O           1   0.451   0.000  Inst_register_file/Mmux__varindex0001_6_f6 (Inst_register_file/Mmux__varindex0001_6_f6)
      MUXF7:I0->O           1   0.451   0.360  Inst_register_file/Mmux__varindex0001_4_f7 (Inst_register_file/Mmux__varindex0001_4_f7)
-     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (aux8<0>)
+     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (crs2<0>)
      LUT3:I2->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -1264,7 +1263,7 @@ Delay:               10.344ns (Levels of Logic = 40)
      MUXF5:I0->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0001_7_f5_1 (Inst_register_file/Mmux__varindex0001_7_f52)
      MUXF6:I1->O           1   0.451   0.000  Inst_register_file/Mmux__varindex0001_6_f6 (Inst_register_file/Mmux__varindex0001_6_f6)
      MUXF7:I0->O           1   0.451   0.360  Inst_register_file/Mmux__varindex0001_4_f7 (Inst_register_file/Mmux__varindex0001_4_f7)
-     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (aux8<0>)
+     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (crs2<0>)
      LUT3:I2->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -1325,7 +1324,7 @@ Delay:               10.305ns (Levels of Logic = 40)
      MUXF5:I0->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0001_7_f5_1 (Inst_register_file/Mmux__varindex0001_7_f52)
      MUXF6:I1->O           1   0.451   0.000  Inst_register_file/Mmux__varindex0001_6_f6 (Inst_register_file/Mmux__varindex0001_6_f6)
      MUXF7:I0->O           1   0.451   0.360  Inst_register_file/Mmux__varindex0001_4_f7 (Inst_register_file/Mmux__varindex0001_4_f7)
-     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (aux8<0>)
+     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (crs2<0>)
      LUT3:I2->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -1386,7 +1385,7 @@ Delay:               10.344ns (Levels of Logic = 40)
      MUXF5:I1->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0001_7_f5_1 (Inst_register_file/Mmux__varindex0001_7_f52)
      MUXF6:I1->O           1   0.451   0.000  Inst_register_file/Mmux__varindex0001_6_f6 (Inst_register_file/Mmux__varindex0001_6_f6)
      MUXF7:I0->O           1   0.451   0.360  Inst_register_file/Mmux__varindex0001_4_f7 (Inst_register_file/Mmux__varindex0001_4_f7)
-     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (aux8<0>)
+     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (crs2<0>)
      LUT3:I2->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -1447,7 +1446,7 @@ Delay:               10.305ns (Levels of Logic = 40)
      MUXF5:I1->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0001_7_f5_1 (Inst_register_file/Mmux__varindex0001_7_f52)
      MUXF6:I1->O           1   0.451   0.000  Inst_register_file/Mmux__varindex0001_6_f6 (Inst_register_file/Mmux__varindex0001_6_f6)
      MUXF7:I0->O           1   0.451   0.360  Inst_register_file/Mmux__varindex0001_4_f7 (Inst_register_file/Mmux__varindex0001_4_f7)
-     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (aux8<0>)
+     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (crs2<0>)
      LUT3:I2->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -1508,7 +1507,7 @@ Delay:               10.344ns (Levels of Logic = 40)
      MUXF5:I0->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0001_7_f5_0 (Inst_register_file/Mmux__varindex0001_7_f51)
      MUXF6:I0->O           1   0.451   0.000  Inst_register_file/Mmux__varindex0001_5_f6_0 (Inst_register_file/Mmux__varindex0001_5_f61)
      MUXF7:I1->O           1   0.451   0.360  Inst_register_file/Mmux__varindex0001_4_f7 (Inst_register_file/Mmux__varindex0001_4_f7)
-     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (aux8<0>)
+     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (crs2<0>)
      LUT3:I2->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -1569,7 +1568,7 @@ Delay:               10.305ns (Levels of Logic = 40)
      MUXF5:I0->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0001_7_f5_0 (Inst_register_file/Mmux__varindex0001_7_f51)
      MUXF6:I0->O           1   0.451   0.000  Inst_register_file/Mmux__varindex0001_5_f6_0 (Inst_register_file/Mmux__varindex0001_5_f61)
      MUXF7:I1->O           1   0.451   0.360  Inst_register_file/Mmux__varindex0001_4_f7 (Inst_register_file/Mmux__varindex0001_4_f7)
-     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (aux8<0>)
+     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (crs2<0>)
      LUT3:I2->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -1630,7 +1629,7 @@ Delay:               10.344ns (Levels of Logic = 40)
      MUXF5:I1->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0001_7_f5_0 (Inst_register_file/Mmux__varindex0001_7_f51)
      MUXF6:I0->O           1   0.451   0.000  Inst_register_file/Mmux__varindex0001_5_f6_0 (Inst_register_file/Mmux__varindex0001_5_f61)
      MUXF7:I1->O           1   0.451   0.360  Inst_register_file/Mmux__varindex0001_4_f7 (Inst_register_file/Mmux__varindex0001_4_f7)
-     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (aux8<0>)
+     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (crs2<0>)
      LUT3:I2->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -1691,7 +1690,7 @@ Delay:               10.305ns (Levels of Logic = 40)
      MUXF5:I1->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0001_7_f5_0 (Inst_register_file/Mmux__varindex0001_7_f51)
      MUXF6:I0->O           1   0.451   0.000  Inst_register_file/Mmux__varindex0001_5_f6_0 (Inst_register_file/Mmux__varindex0001_5_f61)
      MUXF7:I1->O           1   0.451   0.360  Inst_register_file/Mmux__varindex0001_4_f7 (Inst_register_file/Mmux__varindex0001_4_f7)
-     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (aux8<0>)
+     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (crs2<0>)
      LUT3:I2->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -1752,7 +1751,7 @@ Delay:               10.344ns (Levels of Logic = 40)
      MUXF5:I0->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0001_6_f5_1 (Inst_register_file/Mmux__varindex0001_6_f52)
      MUXF6:I1->O           1   0.451   0.000  Inst_register_file/Mmux__varindex0001_5_f6_0 (Inst_register_file/Mmux__varindex0001_5_f61)
      MUXF7:I1->O           1   0.451   0.360  Inst_register_file/Mmux__varindex0001_4_f7 (Inst_register_file/Mmux__varindex0001_4_f7)
-     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (aux8<0>)
+     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (crs2<0>)
      LUT3:I2->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -1813,7 +1812,7 @@ Delay:               10.305ns (Levels of Logic = 40)
      MUXF5:I0->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0001_6_f5_1 (Inst_register_file/Mmux__varindex0001_6_f52)
      MUXF6:I1->O           1   0.451   0.000  Inst_register_file/Mmux__varindex0001_5_f6_0 (Inst_register_file/Mmux__varindex0001_5_f61)
      MUXF7:I1->O           1   0.451   0.360  Inst_register_file/Mmux__varindex0001_4_f7 (Inst_register_file/Mmux__varindex0001_4_f7)
-     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (aux8<0>)
+     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (crs2<0>)
      LUT3:I2->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -1874,7 +1873,7 @@ Delay:               10.344ns (Levels of Logic = 40)
      MUXF5:I1->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0001_6_f5_1 (Inst_register_file/Mmux__varindex0001_6_f52)
      MUXF6:I1->O           1   0.451   0.000  Inst_register_file/Mmux__varindex0001_5_f6_0 (Inst_register_file/Mmux__varindex0001_5_f61)
      MUXF7:I1->O           1   0.451   0.360  Inst_register_file/Mmux__varindex0001_4_f7 (Inst_register_file/Mmux__varindex0001_4_f7)
-     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (aux8<0>)
+     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (crs2<0>)
      LUT3:I2->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -1935,7 +1934,7 @@ Delay:               10.305ns (Levels of Logic = 40)
      MUXF5:I1->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0001_6_f5_1 (Inst_register_file/Mmux__varindex0001_6_f52)
      MUXF6:I1->O           1   0.451   0.000  Inst_register_file/Mmux__varindex0001_5_f6_0 (Inst_register_file/Mmux__varindex0001_5_f61)
      MUXF7:I1->O           1   0.451   0.360  Inst_register_file/Mmux__varindex0001_4_f7 (Inst_register_file/Mmux__varindex0001_4_f7)
-     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (aux8<0>)
+     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (crs2<0>)
      LUT3:I2->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -2007,7 +2006,7 @@ Offset:              25.995ns (Levels of Logic = 54)
      LUT3:I0->O            1   0.612   0.000  Inst_register_file/Mmux__varindex0000_85 (Inst_register_file/Mmux__varindex0000_85)
      MUXF5:I1->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0000_7_f5_1 (Inst_register_file/Mmux__varindex0000_7_f52)
      MUXF6:I1->O           1   0.451   0.387  Inst_register_file/Mmux__varindex0000_6_f6 (Inst_register_file/Mmux__varindex0000_6_f6)
-     LUT4:I2->O            3   0.612   0.520  Inst_register_file/CRs1<0>1 (aux6<0>)
+     LUT4:I2->O            3   0.612   0.520  Inst_register_file/CRs1<0>1 (crs1<0>)
      LUT3:I1->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -2079,7 +2078,7 @@ Offset:              25.995ns (Levels of Logic = 54)
      LUT3:I0->O            1   0.612   0.000  Inst_register_file/Mmux__varindex0000_85 (Inst_register_file/Mmux__varindex0000_85)
      MUXF5:I1->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0000_7_f5_1 (Inst_register_file/Mmux__varindex0000_7_f52)
      MUXF6:I1->O           1   0.451   0.387  Inst_register_file/Mmux__varindex0000_6_f6 (Inst_register_file/Mmux__varindex0000_6_f6)
-     LUT4:I2->O            3   0.612   0.520  Inst_register_file/CRs1<0>1 (aux6<0>)
+     LUT4:I2->O            3   0.612   0.520  Inst_register_file/CRs1<0>1 (crs1<0>)
      LUT3:I1->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -2151,7 +2150,7 @@ Offset:              25.995ns (Levels of Logic = 54)
      LUT3:I0->O            1   0.612   0.000  Inst_register_file/Mmux__varindex0000_85 (Inst_register_file/Mmux__varindex0000_85)
      MUXF5:I1->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0000_7_f5_1 (Inst_register_file/Mmux__varindex0000_7_f52)
      MUXF6:I1->O           1   0.451   0.387  Inst_register_file/Mmux__varindex0000_6_f6 (Inst_register_file/Mmux__varindex0000_6_f6)
-     LUT4:I2->O            3   0.612   0.520  Inst_register_file/CRs1<0>1 (aux6<0>)
+     LUT4:I2->O            3   0.612   0.520  Inst_register_file/CRs1<0>1 (crs1<0>)
      LUT3:I1->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -2223,7 +2222,7 @@ Offset:              25.995ns (Levels of Logic = 54)
      LUT3:I0->O            1   0.612   0.000  Inst_register_file/Mmux__varindex0000_85 (Inst_register_file/Mmux__varindex0000_85)
      MUXF5:I1->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0000_7_f5_1 (Inst_register_file/Mmux__varindex0000_7_f52)
      MUXF6:I1->O           1   0.451   0.387  Inst_register_file/Mmux__varindex0000_6_f6 (Inst_register_file/Mmux__varindex0000_6_f6)
-     LUT4:I2->O            3   0.612   0.520  Inst_register_file/CRs1<0>1 (aux6<0>)
+     LUT4:I2->O            3   0.612   0.520  Inst_register_file/CRs1<0>1 (crs1<0>)
      LUT3:I1->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -2295,7 +2294,7 @@ Offset:              25.995ns (Levels of Logic = 54)
      LUT3:I0->O            1   0.612   0.000  Inst_register_file/Mmux__varindex0000_85 (Inst_register_file/Mmux__varindex0000_85)
      MUXF5:I1->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0000_7_f5_1 (Inst_register_file/Mmux__varindex0000_7_f52)
      MUXF6:I1->O           1   0.451   0.387  Inst_register_file/Mmux__varindex0000_6_f6 (Inst_register_file/Mmux__varindex0000_6_f6)
-     LUT4:I2->O            3   0.612   0.520  Inst_register_file/CRs1<0>1 (aux6<0>)
+     LUT4:I2->O            3   0.612   0.520  Inst_register_file/CRs1<0>1 (crs1<0>)
      LUT3:I1->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -2367,7 +2366,7 @@ Offset:              25.995ns (Levels of Logic = 54)
      LUT3:I0->O            1   0.612   0.000  Inst_register_file/Mmux__varindex0000_85 (Inst_register_file/Mmux__varindex0000_85)
      MUXF5:I1->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0000_7_f5_1 (Inst_register_file/Mmux__varindex0000_7_f52)
      MUXF6:I1->O           1   0.451   0.387  Inst_register_file/Mmux__varindex0000_6_f6 (Inst_register_file/Mmux__varindex0000_6_f6)
-     LUT4:I2->O            3   0.612   0.520  Inst_register_file/CRs1<0>1 (aux6<0>)
+     LUT4:I2->O            3   0.612   0.520  Inst_register_file/CRs1<0>1 (crs1<0>)
      LUT3:I1->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -2439,7 +2438,7 @@ Offset:              25.995ns (Levels of Logic = 54)
      LUT3:I0->O            1   0.612   0.000  Inst_register_file/Mmux__varindex0000_85 (Inst_register_file/Mmux__varindex0000_85)
      MUXF5:I1->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0000_7_f5_1 (Inst_register_file/Mmux__varindex0000_7_f52)
      MUXF6:I1->O           1   0.451   0.387  Inst_register_file/Mmux__varindex0000_6_f6 (Inst_register_file/Mmux__varindex0000_6_f6)
-     LUT4:I2->O            3   0.612   0.520  Inst_register_file/CRs1<0>1 (aux6<0>)
+     LUT4:I2->O            3   0.612   0.520  Inst_register_file/CRs1<0>1 (crs1<0>)
      LUT3:I1->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -2511,7 +2510,7 @@ Offset:              25.995ns (Levels of Logic = 54)
      LUT3:I0->O            1   0.612   0.000  Inst_register_file/Mmux__varindex0000_85 (Inst_register_file/Mmux__varindex0000_85)
      MUXF5:I1->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0000_7_f5_1 (Inst_register_file/Mmux__varindex0000_7_f52)
      MUXF6:I1->O           1   0.451   0.387  Inst_register_file/Mmux__varindex0000_6_f6 (Inst_register_file/Mmux__varindex0000_6_f6)
-     LUT4:I2->O            3   0.612   0.520  Inst_register_file/CRs1<0>1 (aux6<0>)
+     LUT4:I2->O            3   0.612   0.520  Inst_register_file/CRs1<0>1 (crs1<0>)
      LUT3:I1->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -2583,7 +2582,7 @@ Offset:              25.995ns (Levels of Logic = 54)
      LUT3:I0->O            1   0.612   0.000  Inst_register_file/Mmux__varindex0000_85 (Inst_register_file/Mmux__varindex0000_85)
      MUXF5:I1->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0000_7_f5_1 (Inst_register_file/Mmux__varindex0000_7_f52)
      MUXF6:I1->O           1   0.451   0.387  Inst_register_file/Mmux__varindex0000_6_f6 (Inst_register_file/Mmux__varindex0000_6_f6)
-     LUT4:I2->O            3   0.612   0.520  Inst_register_file/CRs1<0>1 (aux6<0>)
+     LUT4:I2->O            3   0.612   0.520  Inst_register_file/CRs1<0>1 (crs1<0>)
      LUT3:I1->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -2655,7 +2654,7 @@ Offset:              25.995ns (Levels of Logic = 54)
      LUT3:I0->O            1   0.612   0.000  Inst_register_file/Mmux__varindex0000_85 (Inst_register_file/Mmux__varindex0000_85)
      MUXF5:I1->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0000_7_f5_1 (Inst_register_file/Mmux__varindex0000_7_f52)
      MUXF6:I1->O           1   0.451   0.387  Inst_register_file/Mmux__varindex0000_6_f6 (Inst_register_file/Mmux__varindex0000_6_f6)
-     LUT4:I2->O            3   0.612   0.520  Inst_register_file/CRs1<0>1 (aux6<0>)
+     LUT4:I2->O            3   0.612   0.520  Inst_register_file/CRs1<0>1 (crs1<0>)
      LUT3:I1->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -2727,7 +2726,7 @@ Offset:              25.995ns (Levels of Logic = 54)
      LUT3:I0->O            1   0.612   0.000  Inst_register_file/Mmux__varindex0000_85 (Inst_register_file/Mmux__varindex0000_85)
      MUXF5:I1->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0000_7_f5_1 (Inst_register_file/Mmux__varindex0000_7_f52)
      MUXF6:I1->O           1   0.451   0.387  Inst_register_file/Mmux__varindex0000_6_f6 (Inst_register_file/Mmux__varindex0000_6_f6)
-     LUT4:I2->O            3   0.612   0.520  Inst_register_file/CRs1<0>1 (aux6<0>)
+     LUT4:I2->O            3   0.612   0.520  Inst_register_file/CRs1<0>1 (crs1<0>)
      LUT3:I1->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -2799,7 +2798,7 @@ Offset:              25.995ns (Levels of Logic = 54)
      LUT3:I0->O            1   0.612   0.000  Inst_register_file/Mmux__varindex0000_85 (Inst_register_file/Mmux__varindex0000_85)
      MUXF5:I1->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0000_7_f5_1 (Inst_register_file/Mmux__varindex0000_7_f52)
      MUXF6:I1->O           1   0.451   0.387  Inst_register_file/Mmux__varindex0000_6_f6 (Inst_register_file/Mmux__varindex0000_6_f6)
-     LUT4:I2->O            3   0.612   0.520  Inst_register_file/CRs1<0>1 (aux6<0>)
+     LUT4:I2->O            3   0.612   0.520  Inst_register_file/CRs1<0>1 (crs1<0>)
      LUT3:I1->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -2871,7 +2870,7 @@ Offset:              25.995ns (Levels of Logic = 54)
      LUT3:I0->O            1   0.612   0.000  Inst_register_file/Mmux__varindex0000_85 (Inst_register_file/Mmux__varindex0000_85)
      MUXF5:I1->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0000_7_f5_1 (Inst_register_file/Mmux__varindex0000_7_f52)
      MUXF6:I1->O           1   0.451   0.387  Inst_register_file/Mmux__varindex0000_6_f6 (Inst_register_file/Mmux__varindex0000_6_f6)
-     LUT4:I2->O            3   0.612   0.520  Inst_register_file/CRs1<0>1 (aux6<0>)
+     LUT4:I2->O            3   0.612   0.520  Inst_register_file/CRs1<0>1 (crs1<0>)
      LUT3:I1->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -2943,7 +2942,7 @@ Offset:              25.995ns (Levels of Logic = 54)
      LUT3:I0->O            1   0.612   0.000  Inst_register_file/Mmux__varindex0000_85 (Inst_register_file/Mmux__varindex0000_85)
      MUXF5:I1->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0000_7_f5_1 (Inst_register_file/Mmux__varindex0000_7_f52)
      MUXF6:I1->O           1   0.451   0.387  Inst_register_file/Mmux__varindex0000_6_f6 (Inst_register_file/Mmux__varindex0000_6_f6)
-     LUT4:I2->O            3   0.612   0.520  Inst_register_file/CRs1<0>1 (aux6<0>)
+     LUT4:I2->O            3   0.612   0.520  Inst_register_file/CRs1<0>1 (crs1<0>)
      LUT3:I1->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -3015,7 +3014,7 @@ Offset:              25.995ns (Levels of Logic = 54)
      LUT3:I0->O            1   0.612   0.000  Inst_register_file/Mmux__varindex0000_85 (Inst_register_file/Mmux__varindex0000_85)
      MUXF5:I1->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0000_7_f5_1 (Inst_register_file/Mmux__varindex0000_7_f52)
      MUXF6:I1->O           1   0.451   0.387  Inst_register_file/Mmux__varindex0000_6_f6 (Inst_register_file/Mmux__varindex0000_6_f6)
-     LUT4:I2->O            3   0.612   0.520  Inst_register_file/CRs1<0>1 (aux6<0>)
+     LUT4:I2->O            3   0.612   0.520  Inst_register_file/CRs1<0>1 (crs1<0>)
      LUT3:I1->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -3087,7 +3086,7 @@ Offset:              25.995ns (Levels of Logic = 54)
      LUT3:I0->O            1   0.612   0.000  Inst_register_file/Mmux__varindex0000_85 (Inst_register_file/Mmux__varindex0000_85)
      MUXF5:I1->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0000_7_f5_1 (Inst_register_file/Mmux__varindex0000_7_f52)
      MUXF6:I1->O           1   0.451   0.387  Inst_register_file/Mmux__varindex0000_6_f6 (Inst_register_file/Mmux__varindex0000_6_f6)
-     LUT4:I2->O            3   0.612   0.520  Inst_register_file/CRs1<0>1 (aux6<0>)
+     LUT4:I2->O            3   0.612   0.520  Inst_register_file/CRs1<0>1 (crs1<0>)
      LUT3:I1->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -3232,7 +3231,7 @@ Offset:              12.603ns (Levels of Logic = 40)
      MUXF5:I0->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0001_8_f5 (Inst_register_file/Mmux__varindex0001_8_f5)
      MUXF6:I0->O           1   0.451   0.000  Inst_register_file/Mmux__varindex0001_6_f6 (Inst_register_file/Mmux__varindex0001_6_f6)
      MUXF7:I0->O           1   0.451   0.360  Inst_register_file/Mmux__varindex0001_4_f7 (Inst_register_file/Mmux__varindex0001_4_f7)
-     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (aux8<0>)
+     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (crs2<0>)
      LUT3:I2->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -3290,7 +3289,7 @@ Offset:              12.564ns (Levels of Logic = 40)
      MUXF5:I0->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0001_8_f5 (Inst_register_file/Mmux__varindex0001_8_f5)
      MUXF6:I0->O           1   0.451   0.000  Inst_register_file/Mmux__varindex0001_6_f6 (Inst_register_file/Mmux__varindex0001_6_f6)
      MUXF7:I0->O           1   0.451   0.360  Inst_register_file/Mmux__varindex0001_4_f7 (Inst_register_file/Mmux__varindex0001_4_f7)
-     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (aux8<0>)
+     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (crs2<0>)
      LUT3:I2->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -3348,7 +3347,7 @@ Offset:              12.603ns (Levels of Logic = 40)
      MUXF5:I1->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0001_8_f5 (Inst_register_file/Mmux__varindex0001_8_f5)
      MUXF6:I0->O           1   0.451   0.000  Inst_register_file/Mmux__varindex0001_6_f6 (Inst_register_file/Mmux__varindex0001_6_f6)
      MUXF7:I0->O           1   0.451   0.360  Inst_register_file/Mmux__varindex0001_4_f7 (Inst_register_file/Mmux__varindex0001_4_f7)
-     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (aux8<0>)
+     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (crs2<0>)
      LUT3:I2->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -3406,7 +3405,7 @@ Offset:              12.564ns (Levels of Logic = 40)
      MUXF5:I1->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0001_8_f5 (Inst_register_file/Mmux__varindex0001_8_f5)
      MUXF6:I0->O           1   0.451   0.000  Inst_register_file/Mmux__varindex0001_6_f6 (Inst_register_file/Mmux__varindex0001_6_f6)
      MUXF7:I0->O           1   0.451   0.360  Inst_register_file/Mmux__varindex0001_4_f7 (Inst_register_file/Mmux__varindex0001_4_f7)
-     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (aux8<0>)
+     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (crs2<0>)
      LUT3:I2->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -3464,7 +3463,7 @@ Offset:              12.603ns (Levels of Logic = 40)
      MUXF5:I0->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0001_7_f5_1 (Inst_register_file/Mmux__varindex0001_7_f52)
      MUXF6:I1->O           1   0.451   0.000  Inst_register_file/Mmux__varindex0001_6_f6 (Inst_register_file/Mmux__varindex0001_6_f6)
      MUXF7:I0->O           1   0.451   0.360  Inst_register_file/Mmux__varindex0001_4_f7 (Inst_register_file/Mmux__varindex0001_4_f7)
-     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (aux8<0>)
+     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (crs2<0>)
      LUT3:I2->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -3522,7 +3521,7 @@ Offset:              12.564ns (Levels of Logic = 40)
      MUXF5:I0->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0001_7_f5_1 (Inst_register_file/Mmux__varindex0001_7_f52)
      MUXF6:I1->O           1   0.451   0.000  Inst_register_file/Mmux__varindex0001_6_f6 (Inst_register_file/Mmux__varindex0001_6_f6)
      MUXF7:I0->O           1   0.451   0.360  Inst_register_file/Mmux__varindex0001_4_f7 (Inst_register_file/Mmux__varindex0001_4_f7)
-     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (aux8<0>)
+     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (crs2<0>)
      LUT3:I2->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -3580,7 +3579,7 @@ Offset:              12.603ns (Levels of Logic = 40)
      MUXF5:I1->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0001_7_f5_1 (Inst_register_file/Mmux__varindex0001_7_f52)
      MUXF6:I1->O           1   0.451   0.000  Inst_register_file/Mmux__varindex0001_6_f6 (Inst_register_file/Mmux__varindex0001_6_f6)
      MUXF7:I0->O           1   0.451   0.360  Inst_register_file/Mmux__varindex0001_4_f7 (Inst_register_file/Mmux__varindex0001_4_f7)
-     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (aux8<0>)
+     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (crs2<0>)
      LUT3:I2->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -3638,7 +3637,7 @@ Offset:              12.564ns (Levels of Logic = 40)
      MUXF5:I1->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0001_7_f5_1 (Inst_register_file/Mmux__varindex0001_7_f52)
      MUXF6:I1->O           1   0.451   0.000  Inst_register_file/Mmux__varindex0001_6_f6 (Inst_register_file/Mmux__varindex0001_6_f6)
      MUXF7:I0->O           1   0.451   0.360  Inst_register_file/Mmux__varindex0001_4_f7 (Inst_register_file/Mmux__varindex0001_4_f7)
-     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (aux8<0>)
+     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (crs2<0>)
      LUT3:I2->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -3696,7 +3695,7 @@ Offset:              12.603ns (Levels of Logic = 40)
      MUXF5:I0->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0001_7_f5_0 (Inst_register_file/Mmux__varindex0001_7_f51)
      MUXF6:I0->O           1   0.451   0.000  Inst_register_file/Mmux__varindex0001_5_f6_0 (Inst_register_file/Mmux__varindex0001_5_f61)
      MUXF7:I1->O           1   0.451   0.360  Inst_register_file/Mmux__varindex0001_4_f7 (Inst_register_file/Mmux__varindex0001_4_f7)
-     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (aux8<0>)
+     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (crs2<0>)
      LUT3:I2->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -3754,7 +3753,7 @@ Offset:              12.564ns (Levels of Logic = 40)
      MUXF5:I0->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0001_7_f5_0 (Inst_register_file/Mmux__varindex0001_7_f51)
      MUXF6:I0->O           1   0.451   0.000  Inst_register_file/Mmux__varindex0001_5_f6_0 (Inst_register_file/Mmux__varindex0001_5_f61)
      MUXF7:I1->O           1   0.451   0.360  Inst_register_file/Mmux__varindex0001_4_f7 (Inst_register_file/Mmux__varindex0001_4_f7)
-     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (aux8<0>)
+     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (crs2<0>)
      LUT3:I2->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -3812,7 +3811,7 @@ Offset:              12.603ns (Levels of Logic = 40)
      MUXF5:I1->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0001_7_f5_0 (Inst_register_file/Mmux__varindex0001_7_f51)
      MUXF6:I0->O           1   0.451   0.000  Inst_register_file/Mmux__varindex0001_5_f6_0 (Inst_register_file/Mmux__varindex0001_5_f61)
      MUXF7:I1->O           1   0.451   0.360  Inst_register_file/Mmux__varindex0001_4_f7 (Inst_register_file/Mmux__varindex0001_4_f7)
-     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (aux8<0>)
+     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (crs2<0>)
      LUT3:I2->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -3870,7 +3869,7 @@ Offset:              12.564ns (Levels of Logic = 40)
      MUXF5:I1->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0001_7_f5_0 (Inst_register_file/Mmux__varindex0001_7_f51)
      MUXF6:I0->O           1   0.451   0.000  Inst_register_file/Mmux__varindex0001_5_f6_0 (Inst_register_file/Mmux__varindex0001_5_f61)
      MUXF7:I1->O           1   0.451   0.360  Inst_register_file/Mmux__varindex0001_4_f7 (Inst_register_file/Mmux__varindex0001_4_f7)
-     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (aux8<0>)
+     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (crs2<0>)
      LUT3:I2->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -3928,7 +3927,7 @@ Offset:              12.603ns (Levels of Logic = 40)
      MUXF5:I0->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0001_6_f5_1 (Inst_register_file/Mmux__varindex0001_6_f52)
      MUXF6:I1->O           1   0.451   0.000  Inst_register_file/Mmux__varindex0001_5_f6_0 (Inst_register_file/Mmux__varindex0001_5_f61)
      MUXF7:I1->O           1   0.451   0.360  Inst_register_file/Mmux__varindex0001_4_f7 (Inst_register_file/Mmux__varindex0001_4_f7)
-     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (aux8<0>)
+     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (crs2<0>)
      LUT3:I2->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -3986,7 +3985,7 @@ Offset:              12.564ns (Levels of Logic = 40)
      MUXF5:I0->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0001_6_f5_1 (Inst_register_file/Mmux__varindex0001_6_f52)
      MUXF6:I1->O           1   0.451   0.000  Inst_register_file/Mmux__varindex0001_5_f6_0 (Inst_register_file/Mmux__varindex0001_5_f61)
      MUXF7:I1->O           1   0.451   0.360  Inst_register_file/Mmux__varindex0001_4_f7 (Inst_register_file/Mmux__varindex0001_4_f7)
-     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (aux8<0>)
+     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (crs2<0>)
      LUT3:I2->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -4044,7 +4043,7 @@ Offset:              12.603ns (Levels of Logic = 40)
      MUXF5:I1->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0001_6_f5_1 (Inst_register_file/Mmux__varindex0001_6_f52)
      MUXF6:I1->O           1   0.451   0.000  Inst_register_file/Mmux__varindex0001_5_f6_0 (Inst_register_file/Mmux__varindex0001_5_f61)
      MUXF7:I1->O           1   0.451   0.360  Inst_register_file/Mmux__varindex0001_4_f7 (Inst_register_file/Mmux__varindex0001_4_f7)
-     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (aux8<0>)
+     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (crs2<0>)
      LUT3:I2->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -4102,7 +4101,7 @@ Offset:              12.564ns (Levels of Logic = 40)
      MUXF5:I1->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0001_6_f5_1 (Inst_register_file/Mmux__varindex0001_6_f52)
      MUXF6:I1->O           1   0.451   0.000  Inst_register_file/Mmux__varindex0001_5_f6_0 (Inst_register_file/Mmux__varindex0001_5_f61)
      MUXF7:I1->O           1   0.451   0.360  Inst_register_file/Mmux__varindex0001_4_f7 (Inst_register_file/Mmux__varindex0001_4_f7)
-     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (aux8<0>)
+     LUT4:I3->O            2   0.612   0.410  Inst_mux32b/MuxOut<0>54 (crs2<0>)
      LUT3:I2->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -4172,7 +4171,7 @@ Delay:               28.254ns (Levels of Logic = 54)
      LUT3:I0->O            1   0.612   0.000  Inst_register_file/Mmux__varindex0000_85 (Inst_register_file/Mmux__varindex0000_85)
      MUXF5:I1->O           1   0.278   0.000  Inst_register_file/Mmux__varindex0000_7_f5_1 (Inst_register_file/Mmux__varindex0000_7_f52)
      MUXF6:I1->O           1   0.451   0.387  Inst_register_file/Mmux__varindex0000_6_f6 (Inst_register_file/Mmux__varindex0000_6_f6)
-     LUT4:I2->O            3   0.612   0.520  Inst_register_file/CRs1<0>1 (aux6<0>)
+     LUT4:I2->O            3   0.612   0.520  Inst_register_file/CRs1<0>1 (crs1<0>)
      LUT3:I1->O            1   0.612   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_lut<0> (Inst_ALU/Maddsub_AluResult_addsub0000_lut<0>)
      MUXCY:S->O            1   0.404   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<0> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<0>)
      MUXCY:CI->O           1   0.051   0.000  Inst_ALU/Maddsub_AluResult_addsub0000_cy<1> (Inst_ALU/Maddsub_AluResult_addsub0000_cy<1>)
@@ -4215,12 +4214,12 @@ Delay:               28.254ns (Levels of Logic = 54)
 =========================================================================
 
 
-Total REAL time to Xst completion: 21.00 secs
-Total CPU time to Xst completion: 21.21 secs
+Total REAL time to Xst completion: 22.00 secs
+Total CPU time to Xst completion: 21.52 secs
  
 --> 
 
-Total memory usage is 423036 kilobytes
+Total memory usage is 421980 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  562 (   0 filtered)
