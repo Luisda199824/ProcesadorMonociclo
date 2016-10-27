@@ -13,8 +13,6 @@ architecture Behavioral of UnityControl is
 
 begin
 
-process(Op, Op3)
-begin
 --	Add  		10 000000
 --	Sub  		10 000100
 --	And  		10 000001
@@ -23,6 +21,8 @@ begin
 --	Orn  		10 000110
 --	Andn 		10 000101
 --	Xnor 		10 000111
+
+
 -- Addcc		10	010000
 -- Subcc		10	010100
 -- Addx		10 001000
@@ -38,23 +38,25 @@ begin
 -- SLL		10 100101
 -- SRL		10 100111
 
+process(Op, Op3)
+begin
 	if (Op = "10") then
 		case (Op3) is
-			when "000000" => -- Add
+			when "000000" => -- add
 				AluOp <= "000000";
-			when "000100" => -- Sub
+			when "000100" => -- sub
 				AluOp <= "000001";
-			when "000001" => -- And
+			when "000001" => -- and
 				AluOp <= "000011";
-			when "000010" => -- Or
+			when "000010" => -- or
 				AluOp <= "000010";
-			when "000011" => -- Xor
+			when "000011" => -- xor
 				AluOp <= "000100";
-			when "000110" => -- Orn
+			when "000110" => -- orn
 				AluOp <= "000101";
-			when "000101" => -- Andn
+			when "000101" => -- andn
 				AluOp <= "000110";
-			when "000111" => -- Xnor
+			when "000111" => -- xnor
 				AluOp <= "000111";
 			when "010000" => -- Addcc
 				AluOp <= "001000";
