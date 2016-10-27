@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-10-20T10:00:26</DateModified>
+  <DateModified>2016-10-27T17:06:29</DateModified>
   <ModuleName>unionModulos</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/Usuario UTP/Luisda/ProcesadorMonociclo/iseconfig/unionModulos.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Usuario UTP/Luisda/ProcesadorMonociclo\</ImplementationReportsDirectory>
+  <SavedFilePath>D:/Usuario UTP/Desktop/Luisda/ProcesadorMonociclo/iseconfig/unionModulos.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/Usuario UTP/Desktop/Luisda/ProcesadorMonociclo\</ImplementationReportsDirectory>
   <DateInitialized>2016-10-20T09:21:19</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
