@@ -2,6 +2,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 entity Alu is
     Port ( AluOp : in  STD_LOGIC_VECTOR (5 downto 0);
@@ -28,39 +29,39 @@ begin
 				when "000100" => -- Xor
 					AluResult <= rs1 xor rs2;
 				when "000101" => -- Or n
-					AluResult <= rs1 nor rs2;
+					AluResult <= rs1 or not rs2;
 				when "000110" => -- And n
-					AluResult <= rs1 nand rs2;
+					AluResult <= rs1 and not rs2;
 				when "000111" => -- Xnor
 					AluResult <= rs1 xnor rs2;
 				when "001000" => -- Addcc
-					AluOp <= "";
+					AluResult <= rs1 + rs2;
 				when "001001" => -- Subcc
-					AluOp <= "";
+					AluResult <= rs1 - rs2;
 				when "001010" => -- Addx
-					AluOp <= "";
+					AluResult <= rs1 + rs2 + c;
 				when "001011" => -- Addxcc
-					AluOp <= "";
+					AluResult <= rs1 + rs2 + c;
 				when "001100" => -- Subx
-					AluOp <= "";
+					AluResult <= rs1 - rs2 - c;
 				when "001101" => -- Subxcc
-					AluOp <= "";
+					AluResult <= rs1 - rs2 - c;
 				when "001110" => -- Orcc
-					AluOp <= "";
+					AluResult <= rs1 or rs2;
 				when "001111" => -- Andcc
-					AluOp <= "";
+					AluResult <= rs1 and rs2;
 				when "010000" => -- Xorcc
-					AluOp <= "";
+					AluResult <= rs1 xor rs2;
 				when "010001" => -- Andncc
-					AluOp <= "";
+					AluResult <= rs1 and not rs2;
 				when "010010" => -- Orncc
-					AluOp <= "";
+					AluResult <= rs1 or not rs2;
 				when "010011" => -- Xnorncc
-					AluOp <= "";
-				when "010100" => -- SLL
-					AluOp <= "";
-				when "010101" => -- SRL
-					AluOp <= "";
+					AluResult <= rs1 xnor rs2;
+--				when "010100" => -- SLL
+--					AluResult <= rs1 sll conv_integer(rs2);
+--				when "010101" => -- SRL
+--					AluResult <= rs1 srl conv_integer(rs2);
 				when others =>
 					AluResult <= (others => '0');
 			end case;

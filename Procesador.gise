@@ -145,16 +145,20 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1476974403" xil_pn:in_ck="-1460139679709096658" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-3210459766047791958" xil_pn:start_ts="1476974379">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="WarningsGenerated"/>
+    <transform xil_pn:end_ts="1477609084" xil_pn:in_ck="485071094318456380" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-3210459766047791958" xil_pn:start_ts="1477609081">
+      <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="unionModulos.lso"/>
+      <outfile xil_pn:name="unionModulos.ngc"/>
+      <outfile xil_pn:name="unionModulos.ngr"/>
+      <outfile xil_pn:name="unionModulos.prj"/>
+      <outfile xil_pn:name="unionModulos.syr"/>
+      <outfile xil_pn:name="unionModulos.xst"/>
+      <outfile xil_pn:name="unionModulos_vhdl.prj"/>
+      <outfile xil_pn:name="unionModulos_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
     </transform>
     <transform xil_pn:end_ts="1475793553" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4748049903768682180" xil_pn:start_ts="1475793552">
       <status xil_pn:value="SuccessfullyRun"/>

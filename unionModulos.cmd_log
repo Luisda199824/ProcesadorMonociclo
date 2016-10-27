@@ -16,3 +16,8 @@ xst -intstyle ise -ifn "C:/Users/Usuario UTP/Luisda/ProcesadorMonociclo/unionMod
 xst -intstyle ise -ifn "C:/Users/Usuario UTP/Luisda/ProcesadorMonociclo/unionModulos.xst" -ofn "C:/Users/Usuario UTP/Luisda/ProcesadorMonociclo/unionModulos.syr" 
 xst -intstyle ise -ifn "C:/Users/Usuario UTP/Luisda/ProcesadorMonociclo/unionModulos.xst" -ofn "C:/Users/Usuario UTP/Luisda/ProcesadorMonociclo/unionModulos.syr" 
 xst -intstyle ise -ifn "C:/Users/Usuario UTP/Luisda/ProcesadorMonociclo/unionModulos.xst" -ofn "C:/Users/Usuario UTP/Luisda/ProcesadorMonociclo/unionModulos.syr" 
+xst -intstyle ise -ifn "D:/Usuario UTP/Desktop/Luisda/ProcesadorMonociclo/unionModulos.xst" -ofn "D:/Usuario UTP/Desktop/Luisda/ProcesadorMonociclo/unionModulos.syr" 
+xst -intstyle ise -ifn "D:/Usuario UTP/Desktop/Luisda/ProcesadorMonociclo/unionModulos.xst" -ofn "D:/Usuario UTP/Desktop/Luisda/ProcesadorMonociclo/unionModulos.syr" 
+xst -intstyle ise -ifn "D:/Usuario UTP/Desktop/Luisda/ProcesadorMonociclo/unionModulos.xst" -ofn "D:/Usuario UTP/Desktop/Luisda/ProcesadorMonociclo/unionModulos.syr" 
+xst -intstyle ise -ifn "D:/Usuario UTP/Desktop/Luisda/ProcesadorMonociclo/unionModulos.xst" -ofn "D:/Usuario UTP/Desktop/Luisda/ProcesadorMonociclo/unionModulos.syr" 
+xst -intstyle ise -ifn "D:/Usuario UTP/Desktop/Luisda/ProcesadorMonociclo/unionModulos.xst" -ofn "D:/Usuario UTP/Desktop/Luisda/ProcesadorMonociclo/unionModulos.syr" 
