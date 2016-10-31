@@ -22,7 +22,6 @@ begin
 --	Andn 		10 000101
 --	Xnor 		10 000111
 
-
 -- Addcc		10	010000
 -- Subcc		10	010100
 -- Addx		10 001000
@@ -87,7 +86,7 @@ begin
 			when "100111" => -- SRL
 				AluOp <= "010101";
 			when others =>
-				AluOp <= "000000";
+				AluOp <= "000000"; -- Error
 		end case;
 	end if;
 end process;
