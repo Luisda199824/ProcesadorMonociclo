@@ -22,7 +22,7 @@ architecture Behavioral of windowsmanager is
 
 
 begin
-process(rs1,rs2,rd, cwp)
+process(rs1, rs2, rd, cwp)
 begin
 		if (rs1>="01000" and rs1<="10111" and cwp<='0') then--se aumenta en un bit la direccion
 			nrs1<= '0'&rs1;

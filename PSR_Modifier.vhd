@@ -16,28 +16,26 @@ use std.textio.all;
 
 
 entity PSR_Modifier is
-    Port ( ALUOP : in  STD_LOGIC_VECTOR (5 downto 0);--misma salida de unidad de control
-           Crs1 : in  STD_LOGIC_VECTOR (31 downto 0);--ingresa directo 
+    Port ( AluOp : in  STD_LOGIC_VECTOR (5 downto 0); --misma salida de unidad de control
+           Crs1 : in  STD_LOGIC_VECTOR (31 downto 0); --ingresa directo 
+			  Crs2 : in  STD_LOGIC_VECTOR (31 downto 0); --ingresa la salida del multiplexor
            ALU_Result : in  STD_LOGIC_VECTOR (31 downto 0);
-           Crs2 : in  STD_LOGIC_VECTOR (31 downto 0);--ingresa la salida del multiplexor
-           nzvc : out  STD_LOGIC_VECTOR (3 downto 0);--n=3,z=2,v=1,c=0
-			  reset: in STD_LOGIC
+           nzvc : out  STD_LOGIC_VECTOR (3 downto 0); --n=3,z=2,v=1,c=0
+			  rst: in STD_LOGIC
 			  );
 end PSR_Modifier;
 
 architecture Behavioral of PSR_Modifier is
 
-
-
 begin
 
-	process(ALUOP, ALU_Result, Crs1, Crs2, reset)
+	process(AluOp, ALU_Result, Crs1, Crs2, rst)
 	begin
-		if (reset = '1') then
+		if (rst = '1') then
 			nzvc <= "0000";
 		else
 			-- ANDcc o ANDNcc, ORcc, ORNcc, XORcc, XNORcc
-			if (ALUOP="010001" OR ALUOP="010101" OR ALUOP="010010" OR ALUOP="010110" OR ALUOP="010011" OR ALUOP="010111") then
+			if (AluOp="010001" OR AluOp="010101" OR AluOp="010010" OR AluOp="010110" OR AluOp="010011" OR AluOp="010111") then
 				nzvc(3) <= ALU_result(31);--asignacion del bit mas significativo, al bit que indica si es negativo o positivo
 				if (conv_integer(ALU_result)=0) then--si el resultado de la alu es igual a 0 
 					nzvc(2) <= '1';--el bit que indica que son iguales es 1
@@ -49,7 +47,7 @@ begin
 			end if;
 			
 			-- ADDcc o ADDxcc
-			if (ALUOP="010000" or ALUOP="011000") then
+			if (AluOp="010000" or AluOp="011000") then
 				nzvc(3) <= ALU_result(31);--lo mismo se asigna el primer bit a n
 				if (conv_integer(ALU_result)=0) then
 					nzvc(2) <= '1';
@@ -61,7 +59,7 @@ begin
 			end if;
 			
 			--SUBcc or SUBxcc
-			if (ALUOP="010100" or ALUOP="011100") then
+			if (AluOp="010100" or AluOp="011100") then
 				nzvc(3) <= ALU_result(31);
 				if (conv_integer(ALU_result)=0) then
 					nzvc(2) <= '1';
