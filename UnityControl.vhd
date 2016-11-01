@@ -41,21 +41,21 @@ process(Op, Op3)
 begin
 	if (Op = "10") then
 		case (Op3) is
-			when "000000" => -- add
+			when "000000" => -- Add
 				AluOp <= "000000";
-			when "000100" => -- sub
+			when "000100" => -- Sub
 				AluOp <= "000001";
-			when "000001" => -- and
+			when "000001" => -- And
 				AluOp <= "000011";
-			when "000010" => -- or
+			when "000010" => -- Or
 				AluOp <= "000010";
-			when "000011" => -- xor
+			when "000011" => -- Xor
 				AluOp <= "000100";
-			when "000110" => -- orn
+			when "000110" => -- Orn
 				AluOp <= "000101";
-			when "000101" => -- andn
+			when "000101" => -- Andn
 				AluOp <= "000110";
-			when "000111" => -- xnor
+			when "000111" => -- Xnor
 				AluOp <= "000111";
 			when "010000" => -- Addcc
 				AluOp <= "001000";

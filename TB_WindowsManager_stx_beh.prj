@@ -1,0 +1,2 @@
+vhdl isim_temp "WindowsManager.vhd"
+vhdl isim_temp "TB_WindowsManager.vhd"

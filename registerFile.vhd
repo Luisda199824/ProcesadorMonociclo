@@ -14,43 +14,10 @@ end registerFile;
 
 architecture Behavioral of registerFile is
 
-type ram_type is array (0 to 31) of std_logic_vector(31 downto 0);
+type ram_type is array (0 to 39) of std_logic_vector(31 downto 0);
 
 signal ceros : std_logic_vector (31 downto 0) := (others=>'0');
-signal regFile : ram_type := (
-	x"00000000",
-	x"00000000",
-	x"00000000",
-	x"00000000",
-	x"00000000",
-	x"00000000",
-	x"00000000",
-	x"00000000",
-	x"00000000",
-	x"00000000",
-	x"00000000",
-	x"00000000",
-	x"00000000",
-	x"00000000",
-	x"00000000",
-	x"00000000",
-	x"00000000",
-	x"00000000",
-	x"00000000",
-	x"00000000",
-	x"00000000",
-	x"00000000",
-	x"00000000",
-	x"00000000",
-	x"00000000",
-	x"00000000",
-	x"00000000",
-	x"00000000",
-	x"00000000",
-	x"00000000",
-	x"00000000",
-	x"00000000"
-);
+signal regFile : ram_type := (others => x"00000000");
 
 begin
 
@@ -60,8 +27,16 @@ begin
 		CRs1 <= ceros;
 		CRs2 <= ceros;
 	else
-		CRs1 <= regFile(conv_integer(rs1));
-		CRs2 <= regFile(conv_integer(rs2));
+		if (conv_integer(rs1) = 0) then
+			CRs1 <= ceros;
+		else
+			CRs1 <= regFile(conv_integer(rs1));
+		end if;
+		if (conv_integer(rs2) = 0) then
+			CRs2 <= ceros;
+		else
+			CRs2 <= regFile(conv_integer(rs2));
+		end if;
 		if (not (rd = "00000")) then
 			regFile(conv_integer(rd)) <= dataToWrite;
 		end if;

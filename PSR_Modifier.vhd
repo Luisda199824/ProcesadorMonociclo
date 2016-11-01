@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.numeric_std.all;
 use IEEE.std_logic_unsigned.all;
-use std.textio.all;
+
 -- ADDcc : 010000
 -- ADDxcc : 011000
 -- SUBcc:  010100
@@ -16,11 +16,11 @@ use std.textio.all;
 
 
 entity PSR_Modifier is
-    Port ( AluOp : in  STD_LOGIC_VECTOR (5 downto 0); --misma salida de unidad de control
-           Crs1 : in  STD_LOGIC_VECTOR (31 downto 0); --ingresa directo 
-			  Crs2 : in  STD_LOGIC_VECTOR (31 downto 0); --ingresa la salida del multiplexor
+    Port ( AluOp : in  STD_LOGIC_VECTOR (5 downto 0);
+           Crs1 : in  STD_LOGIC_VECTOR (31 downto 0);
+			  Crs2 : in  STD_LOGIC_VECTOR (31 downto 0);
            ALU_Result : in  STD_LOGIC_VECTOR (31 downto 0);
-           nzvc : out  STD_LOGIC_VECTOR (3 downto 0); --n=3,z=2,v=1,c=0
+           nzvc : out  STD_LOGIC_VECTOR (3 downto 0);
 			  rst: in STD_LOGIC
 			  );
 end PSR_Modifier;
@@ -35,7 +35,7 @@ begin
 			nzvc <= "0000";
 		else
 			-- ANDcc o ANDNcc, ORcc, ORNcc, XORcc, XNORcc
-			if (AluOp="010001" OR AluOp="010101" OR AluOp="010010" OR AluOp="010110" OR AluOp="010011" OR AluOp="010111") then
+			if (AluOp="001111" OR AluOp="010001" OR AluOp="001110" OR AluOp="010010" OR AluOp="010000" OR AluOp="010011") then
 				nzvc(3) <= ALU_result(31);--asignacion del bit mas significativo, al bit que indica si es negativo o positivo
 				if (conv_integer(ALU_result)=0) then--si el resultado de la alu es igual a 0 
 					nzvc(2) <= '1';--el bit que indica que son iguales es 1
@@ -47,7 +47,7 @@ begin
 			end if;
 			
 			-- ADDcc o ADDxcc
-			if (AluOp="010000" or AluOp="011000") then
+			if (AluOp="001000" or AluOp="001011") then
 				nzvc(3) <= ALU_result(31);--lo mismo se asigna el primer bit a n
 				if (conv_integer(ALU_result)=0) then
 					nzvc(2) <= '1';
@@ -59,7 +59,7 @@ begin
 			end if;
 			
 			--SUBcc or SUBxcc
-			if (AluOp="010100" or AluOp="011100") then
+			if (AluOp="001001" or AluOp="001101") then
 				nzvc(3) <= ALU_result(31);
 				if (conv_integer(ALU_result)=0) then
 					nzvc(2) <= '1';

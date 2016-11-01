@@ -161,6 +161,15 @@ begin
 		nrd => NRd
 	);
 	
+	Inst_PSR: PSR Port Map (
+		nzvc => NZVC,
+		rst => rst,
+		clk => clk,
+		ncwp => ncwp,
+		carry => Carry,
+		cwp => cwp
+	);
+	
 	Inst_register_file: registerFile port map(
 		rs1 => NRs1,
 		rs2 => NRs2,
@@ -189,15 +198,6 @@ begin
 		ALU_Result => AluResult,
 		nzvc => NZVC,
 		rst => rst
-	);
-	
-	Inst_PSR: PSR Port Map (
-		nzvc => NZVC,
-		rst => rst,
-		clk => clk,
-		ncwp => ncwp,
-		carry => Carry,
-		cwp => cwp
 	);
 	
 	Inst_mux32b: Mux32B port map (

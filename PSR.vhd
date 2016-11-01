@@ -22,7 +22,11 @@ process(rst, clk, nzvc, ncwp)
 		else
 			if rising_edge(clk) then
 				carry<=nzvc(0);
-				cwp<=ncwp;
+				if ((not (ncwp = '0')) and (not (ncwp = '1'))) then
+					cwp <= '0';
+				else
+					cwp<=ncwp;
+				end if;
 			end if;
 		end if;
 	end process;

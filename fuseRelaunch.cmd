@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "C:/Users/Usuario UTP/Luisda/ProcesadorMonociclo/TB_Procesador_isim_beh.exe" -prj "C:/Users/Usuario UTP/Luisda/ProcesadorMonociclo/TB_Procesador_beh.prj" "TB_Procesador" 
+-intstyle "ise" -incremental -o "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/TB_Procesador_isim_beh.exe" -prj "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/TB_Procesador_beh.prj" "TB_Procesador" 
