@@ -21,26 +21,18 @@ architecture Behavioral of WindowsManager is
 
 begin
 
-process(cwp,rs1,rs2,rd,op,op3)
+process(cwp,rs1,rs2,rd)
 	begin
 		if(op = "10") then
 			if(op3= "111100") then --Save (Restar)
-				if (cwp = '0') then
-					ncwp <= '1';
-				else
-					ncwp <= '0';
-				end if;
-			elsif(op3="111101") then --Restore (Sumo)
-				if (cwp = '0') then
-					ncwp <= '1';
-				else
-					ncwp <= '0';
-				end if;
+				ncwp <= '0';
+			elsif(op3="111101") then --Restore (Sumar)
+				ncwp <= '1';
 			else
 				ncwp<=cwp;
 			end if;
 		end if;
-			
+
 		-- Globales
 		if (conv_integer(rs1)>=0) and (conv_integer(rs1)<7) then
 			nrs1 <= '0'&rs1;
@@ -56,9 +48,9 @@ process(cwp,rs1,rs2,rd,op,op3)
 		if (conv_integer(rs1)>=8) and (conv_integer(rs1)<24) then
 			if (cwp = '1') then
 				if ((conv_integer(rs1)+16)<32) then
-					nrs1 <= '0'&(rs1+16);
+					nrs1 <= '0'&rs1+16;
 				else
-					nrs1 <= rs1+16;
+					nrs1 <= '0'&rs1+16;
 				end if;
 			else
 				nrs1 <= '0'&rs1;
@@ -67,9 +59,9 @@ process(cwp,rs1,rs2,rd,op,op3)
 		if (conv_integer(rs2)>=8) and (conv_integer(rs2)<24) then
 			if (cwp = '1') then
 				if ((conv_integer(rs2)+16)<32) then
-					nrs2 <= '0'&(rs2+16);
+					nrs2 <= '0'&rs2+16;
 				else
-					nrs2 <= rs2+16;
+					nrs2 <= '0'&rs2+16;
 				end if;
 			else
 				nrs2 <= '0'&rs2;
@@ -78,9 +70,9 @@ process(cwp,rs1,rs2,rd,op,op3)
 		if (conv_integer(rd)>=8) and (conv_integer(rd)<24) then
 			if (cwp = '1') then
 				if ((conv_integer(rd)+16)<32) then
-					nrd <= '0'&(rd+16);
+					nrd <= '0'&rd+16;
 				else
-					nrd <= rd+16;
+					nrd <= '0'&rd+16;
 				end if;
 			else
 				nrd <= '0'&rd;
@@ -97,14 +89,14 @@ process(cwp,rs1,rs2,rd,op,op3)
 		end if;
 		if (conv_integer(rs2)>=24) and (conv_integer(rs2)<32) then
 			if (cwp = '1') then
-				nrs2 <= rs2+16;
+				nrs2 <= '0'&rs2+16;
 			else
 				nrs2 <= '0'&rs2;
 			end if;
 		end if;
 		if (conv_integer(rd)>=24) and (conv_integer(rd)<32) then
 			if (cwp = '1') then
-				nrd <= '0'&(rd-16);
+				nrd <= '0'&rd-16;
 			else
 				nrd <= '0'&rd;
 			end if;

@@ -43,11 +43,6 @@ static void work_a_3961274036_3212880686_p_0(char *t0)
     unsigned int t12;
     char *t13;
     char *t14;
-    unsigned char t15;
-    unsigned char t16;
-    unsigned char t17;
-    unsigned char t18;
-    unsigned char t19;
 
 LAB0:    xsi_set_current_line(19, ng0);
     t1 = (t0 + 1192U);
@@ -64,7 +59,18 @@ LAB4:    xsi_set_current_line(23, ng0);
         goto LAB5;
 
 LAB7:
-LAB6:
+LAB6:    xsi_set_current_line(26, ng0);
+    t1 = (t0 + 1512U);
+    t2 = *((char **)t1);
+    t3 = *((unsigned char *)t2);
+    t1 = (t0 + 3456);
+    t5 = (t1 + 56U);
+    t6 = *((char **)t5);
+    t7 = (t6 + 56U);
+    t8 = *((char **)t7);
+    *((unsigned char *)t8) = t3;
+    xsi_driver_first_trans_fast_port(t1);
+
 LAB3:    t1 = (t0 + 3312);
     *((int *)t1) = 1;
 
@@ -103,51 +109,7 @@ LAB5:    xsi_set_current_line(24, ng0);
     t14 = *((char **)t13);
     *((unsigned char *)t14) = t4;
     xsi_driver_first_trans_fast_port(t6);
-    xsi_set_current_line(25, ng0);
-    t1 = (t0 + 1512U);
-    t2 = *((char **)t1);
-    t4 = *((unsigned char *)t2);
-    t15 = (t4 == (unsigned char)2);
-    t16 = (!(t15));
-    if (t16 == 1)
-        goto LAB11;
-
-LAB12:    t3 = (unsigned char)0;
-
-LAB13:    if (t3 != 0)
-        goto LAB8;
-
-LAB10:    xsi_set_current_line(28, ng0);
-    t1 = (t0 + 1512U);
-    t2 = *((char **)t1);
-    t3 = *((unsigned char *)t2);
-    t1 = (t0 + 3456);
-    t5 = (t1 + 56U);
-    t6 = *((char **)t5);
-    t7 = (t6 + 56U);
-    t8 = *((char **)t7);
-    *((unsigned char *)t8) = t3;
-    xsi_driver_first_trans_fast_port(t1);
-
-LAB9:    goto LAB6;
-
-LAB8:    xsi_set_current_line(26, ng0);
-    t1 = (t0 + 3456);
-    t6 = (t1 + 56U);
-    t7 = *((char **)t6);
-    t8 = (t7 + 56U);
-    t13 = *((char **)t8);
-    *((unsigned char *)t13) = (unsigned char)2;
-    xsi_driver_first_trans_fast_port(t1);
-    goto LAB9;
-
-LAB11:    t1 = (t0 + 1512U);
-    t5 = *((char **)t1);
-    t17 = *((unsigned char *)t5);
-    t18 = (t17 == (unsigned char)3);
-    t19 = (!(t18));
-    t3 = t19;
-    goto LAB13;
+    goto LAB6;
 
 }
 

@@ -9,13 +9,13 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Inst_UC - UnityControl - Behavioral (H:/ProcesadorMonociclo-master/UnityControl.vhd)</SelectedItem>
+         <SelectedItem>Inst_PSR - PSR - Behavioral (C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/PSR.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000307000000020000000000000000000000000200000064ffffffff000000810000000300000002000003070000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000251000000020000000000000000000000000200000064ffffffff000000810000000300000002000002510000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>Inst_UC - UnityControl - Behavioral (H:/ProcesadorMonociclo-master/UnityControl.vhd)</CurrentItem>
+      <CurrentItem>Inst_PSR - PSR - Behavioral (C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/PSR.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
@@ -30,7 +30,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000104000000010000000100000000000000000000000064ffffffff000000810000000000000001000001040000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -41,9 +41,9 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000263000000040101000100000000000000000000000064ffffffff000000810000000000000004000000a70000000100000000000000440000000100000000000000660000000100000000000001120000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000027d000000040101000100000000000000000000000064ffffffff000000810000000000000004000000a700000001000000000000004400000001000000000000006600000001000000000000012c0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>H:\cpu.vhd</CurrentItem>
+      <CurrentItem>alu.vhd</CurrentItem>
    </ItemView>
    <ItemView guiview="Library" >
       <ClosedNodes>
@@ -60,33 +60,43 @@
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/TB_Alu - behavior C:|Users|Lenovo_PC|Universidad|Arquitectura de Computadores|Procesador|TB_Alu.vhd</ClosedNode>
          <ClosedNode>/TB_Alu - behavior C:|Users|Usuario UTP|Luisda|ProcesadorMonociclo|TB_Alu.vhd</ClosedNode>
          <ClosedNode>/TB_Alu - behavior C:|Users|utp.CRIE|Desktop|Procesador|TB_Alu.vhd</ClosedNode>
+         <ClosedNode>/TB_InstructionMemory - behavior C:|Users|Lenovo_PC|Universidad|Arquitectura de Computadores|Procesador|TB_InstructionMemory.vhd</ClosedNode>
          <ClosedNode>/TB_InstructionMemory - behavior C:|Users|Usuario UTP|Luisda|ProcesadorMonociclo|TB_InstructionMemory.vhd</ClosedNode>
          <ClosedNode>/TB_InstructionMemory - behavior C:|Users|utp.CRIE|Desktop|Procesador|TB_InstructionMemory.vhd</ClosedNode>
+         <ClosedNode>/TB_Mux32B - behavior C:|Users|Lenovo_PC|Universidad|Arquitectura de Computadores|Procesador|TB_Mux32B.vhd</ClosedNode>
          <ClosedNode>/TB_Mux32B - behavior C:|Users|Usuario UTP|Luisda|ProcesadorMonociclo|TB_Mux32B.vhd</ClosedNode>
          <ClosedNode>/TB_Mux32B - behavior C:|Users|utp.CRIE|Desktop|Procesador|TB_Mux32B.vhd</ClosedNode>
          <ClosedNode>/TB_Procesador - behavior C:|Users|Usuario UTP|Luisda|ProcesadorMonociclo|TB_Procesador.vhd</ClosedNode>
+         <ClosedNode>/TB_ProgrammingCounter - behavior C:|Users|Lenovo_PC|Universidad|Arquitectura de Computadores|Procesador|TB_ProgrammingCounter.vhd</ClosedNode>
          <ClosedNode>/TB_ProgrammingCounter - behavior C:|Users|Usuario UTP|Luisda|ProcesadorMonociclo|TB_ProgrammingCounter.vhd</ClosedNode>
          <ClosedNode>/TB_ProgrammingCounter - behavior C:|Users|utp.CRIE|Desktop|Procesador|TB_ProgrammingCounter.vhd</ClosedNode>
+         <ClosedNode>/TB_SignExtend - behavior C:|Users|Lenovo_PC|Universidad|Arquitectura de Computadores|Procesador|TB_SignExtend.vhd</ClosedNode>
          <ClosedNode>/TB_SignExtend - behavior C:|Users|Usuario UTP|Luisda|ProcesadorMonociclo|TB_SignExtend.vhd</ClosedNode>
          <ClosedNode>/TB_SignExtend - behavior C:|Users|utp.CRIE|Desktop|Procesador|TB_SignExtend.vhd</ClosedNode>
+         <ClosedNode>/TB_Sumador32B - behavior C:|Users|Lenovo_PC|Universidad|Arquitectura de Computadores|Procesador|TB_Sumador32B.vhd</ClosedNode>
          <ClosedNode>/TB_Sumador32B - behavior C:|Users|Usuario UTP|Luisda|ProcesadorMonociclo|TB_Sumador32B.vhd</ClosedNode>
          <ClosedNode>/TB_Sumador32B - behavior C:|Users|utp.CRIE|Desktop|Procesador|TB_Sumador32B.vhd</ClosedNode>
+         <ClosedNode>/TB_UnityControl - behavior C:|Users|Lenovo_PC|Universidad|Arquitectura de Computadores|Procesador|TB_UnityControl.vhd</ClosedNode>
          <ClosedNode>/TB_UnityControl - behavior C:|Users|Usuario UTP|Luisda|ProcesadorMonociclo|TB_UnityControl.vhd</ClosedNode>
          <ClosedNode>/TB_UnityControl - behavior C:|Users|utp.CRIE|Desktop|Procesador|TB_UnityControl.vhd</ClosedNode>
+         <ClosedNode>/TB_WindowsManager - behavior C:|Users|Lenovo_PC|Universidad|Arquitectura de Computadores|Procesador|TB_WindowsManager.vhd</ClosedNode>
+         <ClosedNode>/TB_registerFile - behavior C:|Users|Lenovo_PC|Universidad|Arquitectura de Computadores|Procesador|TB_registerFile.vhd</ClosedNode>
          <ClosedNode>/TB_registerFile - behavior C:|Users|Usuario UTP|Luisda|ProcesadorMonociclo|TB_registerFile.vhd</ClosedNode>
          <ClosedNode>/TB_registerFile - behavior C:|Users|utp.CRIE|Desktop|Procesador|TB_registerFile.vhd</ClosedNode>
+         <ClosedNode>/Tb_Procesador2 - behavior C:|Users|Lenovo_PC|Universidad|Arquitectura de Computadores|Procesador|Tb_Procesador2.vhd</ClosedNode>
          <ClosedNode>/unionModulos - Behavioral C:|Users|Usuario UTP|Luisda|ProcesadorMonociclo|unionModulos.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>xc3s500e-5ft256</SelectedItem>
+         <SelectedItem>TB_Procesador - behavior (C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/TB_Procesador.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >7</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002c5000000020000000000000000000000000200000064ffffffff000000810000000300000002000002c50000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000265000000020000000000000000000000000200000064ffffffff000000810000000300000002000002650000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>xc3s500e-5ft256</CurrentItem>
+      <CurrentItem>TB_Procesador - behavior (C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/TB_Procesador.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -111,12 +121,12 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000104000000010000000100000000000000000000000064ffffffff000000810000000000000001000001040000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
-   <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
-   <CurrentView>Implementation</CurrentView>
+   <SourceProcessView>000000ff00000000000000020000013d0000009901000000050100000002</SourceProcessView>
+   <CurrentView>Behavioral Simulation</CurrentView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
@@ -127,7 +137,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000c9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000c90000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem/>
    </ItemView>
