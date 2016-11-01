@@ -165,9 +165,9 @@ begin
 		nzvc => NZVC,
 		rst => rst,
 		clk => clk,
-		ncwp => ncwp,
+		ncwp => cwp,
 		carry => Carry,
-		cwp => cwp
+		cwp => ncwp
 	);
 	
 	Inst_register_file: registerFile port map(

@@ -24,10 +24,18 @@ begin
 process(cwp,rs1,rs2,rd,op,op3)
 	begin
 		if(op = "10") then
-			if(op3= "111100") then --Save (Resto)
-				ncwp<= '0';
+			if(op3= "111100") then --Save (Restar)
+				if (cwp = '0') then
+					ncwp <= '1';
+				else
+					ncwp <= '0';
+				end if;
 			elsif(op3="111101") then --Restore (Sumo)
-				ncwp<= '1';
+				if (cwp = '0') then
+					ncwp <= '1';
+				else
+					ncwp <= '0';
+				end if;
 			else
 				ncwp<=cwp;
 			end if;
