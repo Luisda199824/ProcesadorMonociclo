@@ -10,7 +10,7 @@ end unionModulos;
 architecture Behavioral of unionModulos is
 
 	signal aux1, aux2, address, instruction, Crs1, Crs2, aux7, AluResult, aux10: std_logic_vector(31 downto 0) := (others => '0');
-	signal AluOp, Op3, NRs1, NRs2, NRd:  std_logic_vector(5 downto 0) := (others => '0');
+	signal AluOp, Op3, NRs1, NRs2, NRd, Mux_NRd:  std_logic_vector(5 downto 0) := (others => '0');
 	signal rs1, rs2, rd : std_logic_vector(4 downto 0) := (others => '0');
 	signal Op, PcSource, RfSource, ReENMemory, WrENMemory: std_logic_vector(1 downto 0) := (others => '0');
 	signal ncwp, cwp, Carry, icc, weRF, RFDest: std_logic := '0';
@@ -26,6 +26,22 @@ architecture Behavioral of unionModulos is
 		);
 	end component;
 	
+	component RD_Mux
+		Port ( 
+				RfDest : in  STD_LOGIC;
+				RD : in  STD_LOGIC;
+				nRD : out  STD_LOGIC_VECTOR (5 downto 0));
+	end component;
+	
+	component DataMemory
+    Port ( Rst : in  STD_LOGIC;
+           cRD : in  STD_LOGIC_VECTOR (31 downto 0);
+           AluResult : in  STD_LOGIC_VECTOR (31 downto 0);
+           WrENMem : in  STD_LOGIC;
+           RdENMem : in  STD_LOGIC;
+           Data : out  STD_LOGIC_VECTOR (31 downto 0));
+	end component;
+
 	component Sumador32B
 		port (
 			A : in  STD_LOGIC_VECTOR (31 downto 0);
@@ -174,6 +190,12 @@ begin
 		nrd => NRd
 	);
 	
+	Inst_RF_Mux: RD_Mux Port Map ( 
+		RfDest => RfDest,
+		RD => NRd,
+		nRD => Mux_NRd
+	);
+	
 	Inst_PSR: PSR Port Map (
 		nzvc => NZVC,
 		rst => rst,
@@ -189,7 +211,7 @@ begin
 		we => weRF,
 		rs1 => NRs1,
 		rs2 => NRs2,
-		rd => NRd,
+		rd => Mux_NRd,
 		rst => rst,
 		dataToWrite => AluResult,
 		CRs1 => Crs1,

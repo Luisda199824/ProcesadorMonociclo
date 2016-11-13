@@ -1,13 +1,13 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity RF_Mux is
+entity RD_Mux is
     Port ( RfDest : in  STD_LOGIC;
            RD : in  STD_LOGIC;
            nRD : out  STD_LOGIC_VECTOR (5 downto 0));
-end RF_Mux;
+end RD_Mux;
 
-architecture Behavioral of RF_Mux is
+architecture Behavioral of RD_Mux is
 
 begin
 
