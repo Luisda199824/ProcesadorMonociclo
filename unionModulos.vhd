@@ -9,7 +9,7 @@ end unionModulos;
 
 architecture Behavioral of unionModulos is
 
-	signal aux1, aux2, address, instruction, Crs1, Crs2, cRD, aux7, AluResult, aux10, DataToMem: std_logic_vector(31 downto 0) := (others => '0');
+	signal PC, aux2, address, instruction, Crs1, Crs2, cRD, aux7, AluResult, aux10, DataToMem, DataToReg: std_logic_vector(31 downto 0) := (others => '0');
 	signal AluOp, Op3, NRs1, NRs2, NRd, Mux_NRd:  std_logic_vector(5 downto 0) := (others => '0');
 	signal rs1, rs2, rd : std_logic_vector(4 downto 0) := (others => '0');
 	signal Op, PcSource, RfSource, ReENMemory, WrENMemory: std_logic_vector(1 downto 0) := (others => '0');
@@ -141,19 +141,27 @@ architecture Behavioral of unionModulos is
 				  SEOut : out  STD_LOGIC_VECTOR (31 downto 0));
 	end component;
 	
+	component DataRF_Mux
+		Port ( RfSource : in  STD_LOGIC_VECTOR (1 downto 0);
+				 DataToMem : in  STD_LOGIC_VECTOR (31 downto 0);
+				 AluResult : in  STD_LOGIC_VECTOR (31 downto 0);
+				 PC : in  STD_LOGIC_VECTOR (31 downto 0);
+ 				 DataToReg : out  STD_LOGIC_VECTOR (31 downto 0));
+	end component;
+	
 begin
 
 	Inst_pc: ProgrammingCounter port map (
 		clk => clk,
 		rst => rst,
 		dato => aux2,
-		PCOut => aux1
+		PCOut => PC
 	);
 
 	Inst_pc_next: ProgrammingCounter port map (
 		clk => clk,
 		rst => rst,
-		dato => aux1,
+		dato => PC,
 		PCOut => address
 	);
 
@@ -272,5 +280,13 @@ begin
 	);
 	
 	salida <= AluResult;
+	
+	Inst_DataRf_Mux: DataRF_Mux port map(
+		RfSource => RfSource,
+		DataToMem => DataToMem,
+		AluResult => AluResult,
+		PC => PC,
+ 		DataToReg => DataToReg
+	);
 	
 end Behavioral;
