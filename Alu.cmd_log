@@ -1,0 +1,2 @@
+vhdtdtfi -lib work Alu.vhd -prj Procesador -o Alu.spl -module Alu -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Alu.spl {C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/Alu.sym} 

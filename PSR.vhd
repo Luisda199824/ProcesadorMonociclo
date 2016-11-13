@@ -28,9 +28,39 @@ process(rst, clk, nzvc)
 			end if;
 			cwp <= ncwp;
 			case cond is
-				when "1000" =>
+				when "1000" => -- BA
 					icc <= '1';
-				when "0000" =>
+				when "0000" => -- BN
+					icc <= '0';
+				when "1001" => -- BNE
+					icc <= not nzvc(2);
+				when "0001" => -- BE
+					icc <= nzvc(2);
+				when "1010" => -- BG
+					icc <= not (nzvc(2) or (nzvc(3) xor nzvc(1)));
+				when "0010" => -- BLE
+					icc <= nzvc(2) or (nzvc(3) xor nzvc(1));
+				when "1011" => -- BGE
+					icc <= not (nzvc(3) xor nzvc(1));
+				when "0011" => -- BL
+					icc <= nzvc(3) xor nzvc(1);
+				when "1100" => -- BGU
+					icc <= not (nzvc(0) or nzvc(2));
+				when "0100" => -- BLEU
+					icc <= nzvc(0) or nzvc(2);
+				when "1101" => -- BCC
+					icc <= not nzvc(0);
+				when "0101" => -- BCS
+					icc <= nzvc(0);
+				when "1110" => -- BPOS
+					icc <= not nzvc(3);
+				when "0110" => -- BNEG
+					icc <= nzvc(0);
+				when "1111" => -- BVC
+					icc <= not nzvc(1);
+				when "0111" => -- BVS
+					icc <= nzvc(1);
+				when others =>
 					icc <= '0';
 			end case;
 		end if;

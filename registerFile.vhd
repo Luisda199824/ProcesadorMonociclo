@@ -3,7 +3,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity registerFile is
-    Port ( rs1 : in  STD_LOGIC_VECTOR (5 downto 0);
+    Port ( we : in  STD_LOGIC;
+			  rs1 : in  STD_LOGIC_VECTOR (5 downto 0);
            rs2 : in  STD_LOGIC_VECTOR (5 downto 0);
            rd : in  STD_LOGIC_VECTOR (5 downto 0);
            rst : in  STD_LOGIC;
@@ -38,7 +39,9 @@ begin
 			CRs2 <= regFile(conv_integer(rs2));
 		end if;
 		if (not (rd = "00000")) then
-			regFile(conv_integer(rd)) <= dataToWrite;
+			if (we = '1') then
+				regFile(conv_integer(rd)) <= dataToWrite;
+			end if;
 		end if;
 	end if;
 end process;

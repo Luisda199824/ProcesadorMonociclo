@@ -1,0 +1,8 @@
+[Inputs]
+c
+=AluOp[5:0]=
+=rs1[31:0]=
+=rs2[31:0]=
+[Outputs]
+=AluResult[31:0]=
+[BiDir]
