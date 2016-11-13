@@ -10,7 +10,8 @@ entity registerFile is
            rst : in  STD_LOGIC;
            dataToWrite : in  STD_LOGIC_VECTOR (31 downto 0);
            CRs1 : out  STD_LOGIC_VECTOR (31 downto 0);
-           CRs2 : out  STD_LOGIC_VECTOR (31 downto 0));
+           CRs2 : out  STD_LOGIC_VECTOR (31 downto 0);
+			  CRd : out  STD_LOGIC_VECTOR (31 downto 0));
 end registerFile;
 
 architecture Behavioral of registerFile is
@@ -27,6 +28,7 @@ begin
 	if (rst = '1') then
 		CRs1 <= ceros;
 		CRs2 <= ceros;
+		CRd <= ceros;
 	else
 		if (conv_integer(rs1) = 0) then
 			CRs1 <= ceros;
@@ -43,6 +45,7 @@ begin
 				regFile(conv_integer(rd)) <= dataToWrite;
 			end if;
 		end if;
+		CRd <= regFile(conv_integer(rd));
 	end if;
 end process;
 

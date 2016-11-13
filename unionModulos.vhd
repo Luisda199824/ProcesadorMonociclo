@@ -9,7 +9,7 @@ end unionModulos;
 
 architecture Behavioral of unionModulos is
 
-	signal aux1, aux2, address, instruction, Crs1, Crs2, aux7, AluResult, aux10: std_logic_vector(31 downto 0) := (others => '0');
+	signal aux1, aux2, address, instruction, Crs1, Crs2, cRD, aux7, AluResult, aux10, DataToMem: std_logic_vector(31 downto 0) := (others => '0');
 	signal AluOp, Op3, NRs1, NRs2, NRd, Mux_NRd:  std_logic_vector(5 downto 0) := (others => '0');
 	signal rs1, rs2, rd : std_logic_vector(4 downto 0) := (others => '0');
 	signal Op, PcSource, RfSource, ReENMemory, WrENMemory: std_logic_vector(1 downto 0) := (others => '0');
@@ -67,8 +67,8 @@ architecture Behavioral of unionModulos is
 			  we : in  STD_LOGIC;
            dataToWrite : in  STD_LOGIC_VECTOR (31 downto 0);
            CRs1 : out  STD_LOGIC_VECTOR (31 downto 0);
-           CRs2 : out  STD_LOGIC_VECTOR (31 downto 0)
-	);
+           CRs2 : out  STD_LOGIC_VECTOR (31 downto 0);
+			  CRd : out  STD_LOGIC_VECTOR (31 downto 0));
 	end component;
 	
 	component UnityControl
@@ -215,7 +215,8 @@ begin
 		rst => rst,
 		dataToWrite => AluResult,
 		CRs1 => Crs1,
-		CRs2 => aux7
+		CRs2 => aux7,
+		CRd => cRD
 	);
 	
 	Inst_UC: UnityControl Port Map(
@@ -259,6 +260,15 @@ begin
 		rs2 => Crs2,
 		c => Carry,
 		AluResult => AluResult
+	);
+	
+	Inst_DataMemory: DataMemory port map (
+		Rst => Rst,
+		cRD => cRD,
+		AluResult => AluResult,
+		WrENMem => WrENMem,
+		RdENMem => RdENMem,
+		Data => DataToMem
 	);
 	
 	salida <= AluResult;
