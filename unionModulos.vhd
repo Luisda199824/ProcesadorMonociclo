@@ -9,7 +9,7 @@ end unionModulos;
 
 architecture Behavioral of unionModulos is
 
-	signal PcCounterPlus, PC, aux2, address, instruction, Crs1, Crs2, cRD, aux7, AluResult, aux10, DataToMem, DataToReg, SEU_Disp30, SEU_Disp22: std_logic_vector(31 downto 0) := (others => '0');
+	signal PcCounterPlus, PC, aux2, address, instruction, Crs1, Crs2, cRD, aux7, AluResult, aux10, DataToMem, DataToReg, SEU_Disp30_Out, SEU_Disp22_Out: std_logic_vector(31 downto 0) := (others => '0');
 	signal AluOp, Op3, NRs1, NRs2, NRd, Mux_NRd:  std_logic_vector(5 downto 0) := (others => '0');
 	signal rs1, rs2, rd : std_logic_vector(4 downto 0) := (others => '0');
 	signal Op, PcSource, RfSource, ReENMemory, WrENMemory: std_logic_vector(1 downto 0) := (others => '0');
@@ -144,12 +144,12 @@ architecture Behavioral of unionModulos is
 	
 	component SEU_Disp30
 		Port ( Disp30 : in  STD_LOGIC_VECTOR (29 downto 0);
-           SEU_Disp30 : out  STD_LOGIC_VECTOR (31 downto 0));
+           SEU_Disp30_Out : out  STD_LOGIC_VECTOR (31 downto 0));
 	end component;
 	
 	component SEU_Disp22
 		Port ( Disp22 : in  STD_LOGIC_VECTOR (21 downto 0);
-           Seu_Disp22 : out  STD_LOGIC_VECTOR (31 downto 0));
+           Seu_Disp22_Out : out  STD_LOGIC_VECTOR (31 downto 0));
 	end component;
 	
 	component PC_Mux
@@ -311,20 +311,20 @@ begin
 	
 	Inst_SeuDisp30: SEU_Disp30 port map ( 
 		Disp30 => disp30,
-		SEU_Disp30 => SEU_Disp30
+		SEU_Disp30_Out => SEU_Disp30_Out
 	);
 	
 	Inst_SeuDisp22: SEU_Disp22 port map (
 		Disp22 => disp22,
-      Seu_Disp22 => Seu_Disp22
+      Seu_Disp22_Out => Seu_Disp22_Out
 	);
 	
 	Inst_PcMux: PC_Mux port map (
 		PcSource => PcSource,
 		AluResult => AluResult,
 		Pc => PcCounterPlus,
-		Pc_Disp22 => Seu_Disp22,
-		Pc_Disp30 => Seu_Disp30,
+		Pc_Disp22 => Seu_Disp22_Out,
+		Pc_Disp30 => Seu_Disp30_Out,
 		nPC_Source => nPC_Source
 	);
 	
