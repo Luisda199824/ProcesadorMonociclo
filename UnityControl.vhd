@@ -120,11 +120,15 @@ begin
 			when others =>
 				AluOp <= "000000"; -- Error
 		end case;
+		if (Op3 = "111000") then
+			RfSource <= "01";
+		else
+			RfSource <= "00";
+		end if;
 		we <= '1';
 		RFDest <= '0';
 		WrENMemory <= '0';
 		ReENMemory <= '0';
-		RfSource <= "00";
 		PcSource <= "00";
 	elsif (op = "00") then -- Branch
 		we <= '0';

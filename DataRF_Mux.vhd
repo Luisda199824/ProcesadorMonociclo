@@ -1,0 +1,17 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity DataRF_Mux is
+    Port ( RfSource : in  STD_LOGIC_VECTOR (1 downto 0);
+           DataToMem : in  STD_LOGIC_VECTOR (31 downto 0);
+           AluResult : in  STD_LOGIC_VECTOR (31 downto 0);
+           PC : in  STD_LOGIC_VECTOR (31 downto 0);
+           DataToReg : out  STD_LOGIC_VECTOR (31 downto 0));
+end DataRF_Mux;
+
+architecture Behavioral of DataRF_Mux is
+
+begin
+
+
+end Behavioral;
