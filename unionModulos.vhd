@@ -13,9 +13,9 @@ architecture Behavioral of unionModulos is
 	signal AluOp, Op3, NRs1, NRs2, NRd:  std_logic_vector(5 downto 0) := (others => '0');
 	signal rs1, rs2, rd : std_logic_vector(4 downto 0) := (others => '0');
 	signal Op: std_logic_vector(1 downto 0) := (others => '0');
-	signal ncwp, cwp, Carry: std_logic := '0';
+	signal ncwp, cwp, Carry, icc: std_logic := '0';
 	signal imm13: std_logic_vector(12 downto 0) := (others => '0');
-	signal NZVC: std_logic_vector(3 downto 0) := (others => '0');
+	signal NZVC, cond: std_logic_vector(3 downto 0) := (others => '0');
 
 	component ProgrammingCounter
 		port (
@@ -96,8 +96,10 @@ architecture Behavioral of unionModulos is
            rst : in  STD_LOGIC;
            clk : in  STD_LOGIC;
 			  ncwp: in STD_LOGIC;
+			  cond : in STD_LOGIC_VECTOR (3 downto 0);
            carry : out  STD_LOGIC;
-			  cwp : out STD_LOGIC);
+			  cwp : out STD_LOGIC;
+			  icc : out STD_LOGIC);
 	end component;
 	
 	component Mux32B
@@ -147,6 +149,7 @@ begin
 	Op <= instruction(31 downto 30);
 	Op3 <= instruction(24 downto 19);
 	imm13 <= instruction(12 downto 0);
+	cond <= instruction(28 downto 25);
 	
 	Inst_WindowsManager: WindowsManager Port Map ( 
 		rs1 => rs1,
@@ -166,8 +169,10 @@ begin
 		rst => rst,
 		clk => clk,
 		ncwp => ncwp,
+		cond => cond,
 		carry => Carry,
-		cwp => cwp
+		cwp => cwp,
+		icc => icc
 	);
 	
 	Inst_register_file: registerFile port map(

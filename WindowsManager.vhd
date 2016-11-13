@@ -21,7 +21,7 @@ architecture Behavioral of WindowsManager is
 
 begin
 
-process(cwp,rs1,rs2,rd)
+process(cwp, rs1, rs2, rd, op3, op)
 	begin
 		if(op = "10") then
 			if(op3= "111100") then --Save (Restar)

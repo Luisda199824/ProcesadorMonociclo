@@ -14,7 +14,7 @@ architecture Behavioral of ProgrammingCounter is
 
 begin
 
-process (clk, rst)
+process (clk, rst, dato)
 begin
 	if (rst = '1') then
 		PCOut <= x"00000000";
