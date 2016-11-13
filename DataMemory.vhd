@@ -19,7 +19,7 @@ signal memory : ram := (others => x"00000000");
 
 begin
 
-process(Rst, cRd, AluResult, WRen, RDen)
+process(Rst, cRd, AluResult, WrENMem, RdENMem)
 	begin
 		if(RdENMem = '1')then
 			if(Rst = '1')then

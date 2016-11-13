@@ -1,9 +1,0 @@
-AR instructionmemory arqinstructionmemory "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/InstructionMemory.vhd" sub00/vhpl05 1479072341
-AR sumador32b behavioral "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/Sumador32B.vhd" sub00/vhpl03 1479072339
-EN windowsmanager NULL "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/WindowsManager.vhd" sub00/vhpl06 1479072342
-EN sumador32b NULL "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/Sumador32B.vhd" sub00/vhpl02 1479072338
-EN programmingcounter NULL "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/ProgrammingCounter.vhd" sub00/vhpl00 1479072336
-AR programmingcounter behavioral "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/ProgrammingCounter.vhd" sub00/vhpl01 1479072337
-EN instructionmemory NULL "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/InstructionMemory.vhd" sub00/vhpl04 1479072340
-AR windowsmanager behavioral "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/WindowsManager.vhd" sub00/vhpl07 1479072343
-EN rd_mux NULL "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/RF_Mux.vhd" sub00/vhpl08 1479072344

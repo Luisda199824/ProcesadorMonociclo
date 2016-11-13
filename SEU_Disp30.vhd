@@ -15,7 +15,7 @@ begin
 process(Disp30)
 	begin
 		if (Disp30(21) = '0') then
-			Seu_Disp30 <= "00"&Disp0;
+			Seu_Disp30 <= "00"&Disp30;
 		else
 			Seu_Disp30 <= "11"&Disp30;
 		end if;

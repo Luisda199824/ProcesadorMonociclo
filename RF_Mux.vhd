@@ -3,7 +3,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity RD_Mux is
     Port ( RfDest : in  STD_LOGIC;
-           RD : in  STD_LOGIC;
+           RD : in  STD_LOGIC_VECTOR (5 downto 0);
            nRD : out  STD_LOGIC_VECTOR (5 downto 0));
 end RD_Mux;
 

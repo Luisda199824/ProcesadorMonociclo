@@ -31,7 +31,7 @@ architecture Behavioral of unionModulos is
 	component RD_Mux
 		Port ( 
 				RfDest : in  STD_LOGIC;
-				RD : in  STD_LOGIC;
+				RD : in  STD_LOGIC_VECTOR (5 downto 0);
 				nRD : out  STD_LOGIC_VECTOR (5 downto 0));
 	end component;
 	
@@ -66,7 +66,6 @@ architecture Behavioral of unionModulos is
            rs2 : in  STD_LOGIC_VECTOR (5 downto 0);
            rd : in  STD_LOGIC_VECTOR (5 downto 0);
            rst : in  STD_LOGIC;
-			  we : in  STD_LOGIC;
            dataToWrite : in  STD_LOGIC_VECTOR (31 downto 0);
            CRs1 : out  STD_LOGIC_VECTOR (31 downto 0);
            CRs2 : out  STD_LOGIC_VECTOR (31 downto 0);
@@ -221,7 +220,7 @@ begin
 		nrd => NRd
 	);
 	
-	Inst_RF_Mux: RD_Mux Port Map ( 
+	Inst_RD_Mux: RD_Mux Port Map ( 
 		RfDest => RfDest,
 		RD => NRd,
 		nRD => Mux_NRd
