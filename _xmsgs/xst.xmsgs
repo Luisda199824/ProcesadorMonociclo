@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="HDLParsers" num="3312" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/unionModulos.vhd</arg>&quot; Line <arg fmt="%d" index="2">299</arg>. Undefined symbol &apos;<arg fmt="%s" index="3">WrENMem</arg>&apos;.
+</msg>
+
+<msg type="error" file="HDLParsers" num="1209" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/unionModulos.vhd</arg>&quot; Line <arg fmt="%d" index="2">299</arg>. <arg fmt="%s" index="3">WrENMem</arg>: Undefined symbol (last report in this block)
+</msg>
+
+<msg type="error" file="HDLParsers" num="3312" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/unionModulos.vhd</arg>&quot; Line <arg fmt="%d" index="2">300</arg>. Undefined symbol &apos;<arg fmt="%s" index="3">RdENMem</arg>&apos;.
+</msg>
+
+<msg type="error" file="HDLParsers" num="1209" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/unionModulos.vhd</arg>&quot; Line <arg fmt="%d" index="2">300</arg>. <arg fmt="%s" index="3">RdENMem</arg>: Undefined symbol (last report in this block)
+</msg>
+
+<msg type="error" file="HDLParsers" num="851" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/unionModulos.vhd</arg>&quot; Line <arg fmt="%d" index="2">295</arg>. Formal <arg fmt="%s" index="3">WrENMem</arg> of <arg fmt="%s" index="4">DataMemory</arg> with no default value must be associated with an actual value.
+</msg>
+
+<msg type="error" file="HDLParsers" num="3312" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/unionModulos.vhd</arg>&quot; Line <arg fmt="%d" index="2">329</arg>. Undefined symbol &apos;<arg fmt="%s" index="3">nPC_Source</arg>&apos;.
+</msg>
+
+<msg type="error" file="HDLParsers" num="1209" delta="old" >&quot;<arg fmt="%s" index="1">C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/unionModulos.vhd</arg>&quot; Line <arg fmt="%d" index="2">329</arg>. <arg fmt="%s" index="3">nPC_Source</arg>: Undefined symbol (last report in this block)
+</msg>
+
+</messages>
+

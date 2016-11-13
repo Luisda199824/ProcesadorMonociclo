@@ -9,11 +9,11 @@ end unionModulos;
 
 architecture Behavioral of unionModulos is
 
-	signal PcCounterPlus, PC, aux2, address, instruction, Crs1, Crs2, cRD, aux7, AluResult, aux10, DataToMem, DataToReg, SEU_Disp30_Out, SEU_Disp22_Out: std_logic_vector(31 downto 0) := (others => '0');
+	signal aux1, PcCounterPlus, PC, aux2, address, instruction, Crs1, Crs2, cRD, aux7, AluResult, aux10, DataToMem, DataToReg, SEU_Disp30_Out, SEU_Disp22_Out: std_logic_vector(31 downto 0) := (others => '0');
 	signal AluOp, Op3, NRs1, NRs2, NRd, Mux_NRd:  std_logic_vector(5 downto 0) := (others => '0');
 	signal rs1, rs2, rd : std_logic_vector(4 downto 0) := (others => '0');
-	signal Op, PcSource, RfSource, ReENMemory, WrENMemory: std_logic_vector(1 downto 0) := (others => '0');
-	signal ncwp, cwp, Carry, icc, weRF, RFDest: std_logic := '0';
+	signal Op, PcSource, RfSource: std_logic_vector(1 downto 0) := (others => '0');
+	signal ncwp, cwp, Carry, icc, weRF, RFDest, ReENMemory, WrENMemory: std_logic := '0';
 	signal imm13: std_logic_vector(12 downto 0) := (others => '0');
 	signal NZVC, cond: std_logic_vector(3 downto 0) := (others => '0');
 	signal disp30 : std_logic_vector(29 downto 0) := (others => '0');
@@ -175,18 +175,18 @@ begin
 		clk => clk,
 		rst => rst,
 		dato => aux2,
-		PCOut => PC
+		PCOut => aux1
 	);
 
 	Inst_pc_next: ProgrammingCounter port map (
 		clk => clk,
 		rst => rst,
-		dato => PC,
+		dato => aux1,
 		PCOut => address
 	);
 
 	Inst_sumPC: Sumador32B port map (
-		A => aux1,
+		A => address,
 		B => x"00000001",
 		SumOut => PcCounterPlus
 	);
@@ -296,8 +296,8 @@ begin
 		Rst => Rst,
 		cRD => cRD,
 		AluResult => AluResult,
-		WrENMem => WrENMem,
-		RdENMem => RdENMem,
+		WrENMem => WrENMemory,
+		RdENMem => RdENMemory,
 		Data => DataToMem
 	);
 	

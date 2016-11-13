@@ -5,8 +5,8 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity SEU_Disp30 is
     Port ( Disp30 : in  STD_LOGIC_VECTOR (29 downto 0);
-           SEU_Disp30 : out  STD_LOGIC_VECTOR (31 downto 0));
-end SEU_Disp30_Out;
+           SEU_Disp30_Out : out  STD_LOGIC_VECTOR (31 downto 0));
+end SEU_Disp30;
 
 architecture Behavioral of SEU_Disp30 is
 
