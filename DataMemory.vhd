@@ -21,16 +21,17 @@ begin
 
 process(Rst, cRd, AluResult, WrENMem, RdENMem)
 	begin
-		if(RdENMem = '1')then
-			if(Rst = '1')then
-				Data <= (others => '0');
-				memory <= (others => x"00000000");
-			else
+		if(Rst = '1')then
+			Data <= x"00000000";
+			memory <= (others => x"00000000");
+		else
+			if(RdENMem = '1')then
 				if(WrENMem = '1')then
 					memory(conv_integer(AluResult(5 downto 0))) <= cRD;
-				else
-					Data <= memory(conv_integer(AluResult(5 downto 0)));
 				end if;
+				Data <= memory(conv_integer(AluResult(5 downto 0)));
+			else
+				Data <= x"00000000";
 			end if;
 		end if;
 	end process;

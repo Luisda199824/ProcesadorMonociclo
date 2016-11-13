@@ -43,14 +43,14 @@ BEGIN
    stim_proc: process
    begin
 		Rst <= '1';
-		cRD <= x"00000000";
+		cRD <= x"00000001";
 		AluResult <= x"00000001";
 		WrENMem <= '0';
 		RdENMem <= '0';
 		wait for 10 ns;
 		Rst <= '0';
 		WrENMem <= '1';
-		RdENMem <= '0';
+		RdENMem <= '1';
 		wait for 10 ns;
 		WrENMem <= '0';
 		RdENMem <= '1';
