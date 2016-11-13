@@ -9,7 +9,7 @@ end unionModulos;
 
 architecture Behavioral of unionModulos is
 
-	signal PC, aux2, address, instruction, Crs1, Crs2, cRD, aux7, AluResult, aux10, DataToMem, DataToReg, SEU_Disp30, SEU_Disp22: std_logic_vector(31 downto 0) := (others => '0');
+	signal PcCounterPlus, PC, aux2, address, instruction, Crs1, Crs2, cRD, aux7, AluResult, aux10, DataToMem, DataToReg, SEU_Disp30, SEU_Disp22: std_logic_vector(31 downto 0) := (others => '0');
 	signal AluOp, Op3, NRs1, NRs2, NRd, Mux_NRd:  std_logic_vector(5 downto 0) := (others => '0');
 	signal rs1, rs2, rd : std_logic_vector(4 downto 0) := (others => '0');
 	signal Op, PcSource, RfSource, ReENMemory, WrENMemory: std_logic_vector(1 downto 0) := (others => '0');
@@ -153,6 +153,15 @@ architecture Behavioral of unionModulos is
            Seu_Disp22 : out  STD_LOGIC_VECTOR (31 downto 0));
 	end component;
 	
+	component PC_Mux
+		Port ( PcSource : in  STD_LOGIC_VECTOR (1 downto 0);
+           AluResult : in  STD_LOGIC_VECTOR (31 downto 0);
+           Pc : in  STD_LOGIC_VECTOR (31 downto 0);
+           Pc_Disp22 : in  STD_LOGIC_VECTOR (31 downto 0);
+           Pc_Disp30 : in  STD_LOGIC_VECTOR (31 downto 0);
+           nPC_Source : out  STD_LOGIC_VECTOR (31 downto 0));
+	end component;
+	
 	component DataRF_Mux
 		Port ( RfSource : in  STD_LOGIC_VECTOR (1 downto 0);
 				 DataToMem : in  STD_LOGIC_VECTOR (31 downto 0);
@@ -177,10 +186,10 @@ begin
 		PCOut => address
 	);
 
-	Inst_sum32b: Sumador32B port map (
+	Inst_sumPC: Sumador32B port map (
 		A => aux1,
 		B => x"00000001",
-		SumOut => aux2
+		SumOut => PcCounterPlus
 	);
 	
 	Inst_instructionMemory: instructionMemory port map (
@@ -309,6 +318,15 @@ begin
 	Inst_SeuDisp22: SEU_Disp22 port map (
 		Disp22 => disp22,
       Seu_Disp22 => Seu_Disp22
+	);
+	
+	Inst_PcMux: PC_Mux port map (
+		PcSource => PcSource,
+		AluResult => AluResult,
+		Pc => PcCounterPlus,
+		Pc_Disp22 => Seu_Disp22,
+		Pc_Disp30 => Seu_Disp30,
+		nPC_Source => nPC_Source
 	);
 	
 	salida <= AluResult;
