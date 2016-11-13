@@ -14,6 +14,9 @@ begin
 process(RfDest, RD)
 begin
 	if (RfDest = '1') then
+		nRD <= "001111";
+	else
+		nRD <= RD;
 	end if;
 end process;
 
