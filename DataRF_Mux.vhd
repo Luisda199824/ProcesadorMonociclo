@@ -13,5 +13,18 @@ architecture Behavioral of DataRF_Mux is
 
 begin
 
+process(RfSource, DataToMem, AluResult, PC)
+begin
+	case RfSource is
+		when "00" =>
+			DataToReg <= AluResult;
+		when "01" =>
+			DataToReg <= PC;
+		when "10" =>
+			DataToReg <= DataToMem;
+		when others =>
+			DataToReg <= x"00000000";
+	end case;
+end process;
 
 end Behavioral;

@@ -122,8 +122,10 @@ begin
 		end case;
 		if (Op3 = "111000") then
 			RfSource <= "01";
+			RFDest <= '1';
 		else
 			RfSource <= "00";
+			RFDest <= '0';
 		end if;
 		we <= '1';
 		RFDest <= '0';
