@@ -6,6 +6,14 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 entity UnityControl is
     Port ( Op : in  STD_LOGIC_VECTOR (1 downto 0);
            Op3 : in  STD_LOGIC_VECTOR (5 downto 0);
+			  cond : in  STD_LOGIC_VECTOR (3 downto 0);
+			  icc : in  STD_LOGIC;
+			  we : out  STD_LOGIC;
+			  RFDest : out  STD_LOGIC;
+			  WrENMemory : out  STD_LOGIC;
+			  ReENMemory : out  STD_LOGIC;
+			  RfSource : out  STD_LOGIC_VECTOR(1 downto 0);
+			  PcSource : out  STD_LOGIC_VECTOR(1 downto 0);
            AluOp : out  STD_LOGIC_VECTOR (5 downto 0));
 end UnityControl;
 
@@ -37,6 +45,28 @@ begin
 -- SLL		10 100101
 -- SRL		10 100111
 
+-- Branchs
+-- BA			00 1000
+-- BN			00 0000
+-- BNE		00 1001
+-- BE			00 0001
+-- BG			00 1010
+-- BLE		00 0010
+-- BGE		00 1011
+-- BL			00 0011
+-- BGU		00 1100
+-- BLEU		00 0100
+-- BCC		00 1101
+-- BCS		00 0101
+-- BPOS		00 1110
+-- BNEG		00 0110
+-- BVC		00 1111
+-- BVS		00 0111
+
+-- Jump and Link
+-- jmpl		10 111000
+
+-- Call 		01 disp22
 process(Op, Op3)
 begin
 	if (Op = "10") then
@@ -85,9 +115,35 @@ begin
 				AluOp <= "010100";
 			when "100111" => -- SRL
 				AluOp <= "010101";
+			when "111000" => -- Jmpl
+				AluOp <= "000000";
 			when others =>
 				AluOp <= "000000"; -- Error
 		end case;
+		we <= '1';
+		RFDest <= '0';
+		WrENMemory <= '0';
+		ReENMemory <= '0';
+		RfSource <= "00";
+		PcSource <= "00";
+	elsif (op = "00") then -- Branch
+		we <= '0';
+		RFDest <= '0';
+		WrENMemory <= '0';
+		ReENMemory <= '0';
+		RfSource <= "00";
+		if (icc = '1') then
+			PcSource <= "01";
+		else
+			PcSource <= "00";
+		end if;
+	elsif (op = "01") then -- Call
+		we <= '0';
+		RFDest <= '0';
+		WrENMemory <= '0';
+		ReENMemory <= '0';
+		RfSource <= "00";
+		PcSource <= "10";
 	end if;
 end process;
 

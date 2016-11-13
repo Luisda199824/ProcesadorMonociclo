@@ -47,6 +47,7 @@ architecture Behavioral of unionModulos is
            rs2 : in  STD_LOGIC_VECTOR (5 downto 0);
            rd : in  STD_LOGIC_VECTOR (5 downto 0);
            rst : in  STD_LOGIC;
+			  we : in  STD_LOGIC;
            dataToWrite : in  STD_LOGIC_VECTOR (31 downto 0);
            CRs1 : out  STD_LOGIC_VECTOR (31 downto 0);
            CRs2 : out  STD_LOGIC_VECTOR (31 downto 0)
@@ -55,8 +56,8 @@ architecture Behavioral of unionModulos is
 	
 	component UnityControl
 		Port ( Op : in  STD_LOGIC_VECTOR (1 downto 0);
-				  Op3 : in  STD_LOGIC_VECTOR (5 downto 0);
-				  AluOp : out  STD_LOGIC_VECTOR (5 downto 0)
+				 Op3 : in  STD_LOGIC_VECTOR (5 downto 0);
+				 AluOp : out  STD_LOGIC_VECTOR (5 downto 0)
 		);
 	end component;
 
