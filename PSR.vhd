@@ -7,7 +7,8 @@ entity PSR is
            clk : in  STD_LOGIC;
 			  ncwp: in STD_LOGIC;
            carry : out  STD_LOGIC;
-			  cwp : out STD_LOGIC);
+			  cwp : out STD_LOGIC;
+			  icc : out STD_LOGIC);
 end PSR;
 
 architecture Behavioral of PSR is
