@@ -150,6 +150,7 @@ begin
 		ReENMemory <= '0';
 		RfSource <= "00";
 		PcSource <= "10";
+		AluOp <= "000000";
 	end if;
 end process;
 

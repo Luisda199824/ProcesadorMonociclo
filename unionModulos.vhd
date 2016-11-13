@@ -153,7 +153,8 @@ architecture Behavioral of unionModulos is
 	end component;
 	
 	component PC_Mux
-		Port ( PcSource : in  STD_LOGIC_VECTOR (1 downto 0);
+		Port ( clk : in  STD_LOGIC;
+			  PcSource : in  STD_LOGIC_VECTOR (1 downto 0);
            AluResult : in  STD_LOGIC_VECTOR (31 downto 0);
            Pc : in  STD_LOGIC_VECTOR (31 downto 0);
            Pc_Disp22 : in  STD_LOGIC_VECTOR (31 downto 0);
@@ -171,14 +172,14 @@ architecture Behavioral of unionModulos is
 	
 begin
 
-	Inst_pc: ProgrammingCounter port map (
+	Inst_pc_next: ProgrammingCounter port map (
 		clk => clk,
 		rst => rst,
 		dato => nPC_Source,
 		PCOut => aux1
 	);
 
-	Inst_pc_next: ProgrammingCounter port map (
+	Inst_pc: ProgrammingCounter port map (
 		clk => clk,
 		rst => rst,
 		dato => aux1,
@@ -186,7 +187,7 @@ begin
 	);
 
 	Inst_sumPC: Sumador32B port map (
-		A => address,
+		A => aux1,
 		B => x"00000001",
 		SumOut => PcCounterPlus
 	);
@@ -320,6 +321,7 @@ begin
 	);
 	
 	Inst_PcMux: PC_Mux port map (
+		clk => clk,
 		PcSource => PcSource,
 		AluResult => AluResult,
 		Pc => PcCounterPlus,
