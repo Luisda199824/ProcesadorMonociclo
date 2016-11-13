@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/TB_Procesador_isim_beh.exe" -prj "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/TB_Procesador_beh.prj" "work.TB_Procesador" 
+-intstyle "ise" -incremental -o "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/TB_DataMemory_isim_beh.exe" -prj "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/TB_DataMemory_beh.prj" "work.TB_DataMemory" 
