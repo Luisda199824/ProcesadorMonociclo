@@ -28,6 +28,6 @@ begin
 		when others =>
 			nPC_Source <= x"00000000";
 	end case;
-end if;
+end process;
 
 end Behavioral;

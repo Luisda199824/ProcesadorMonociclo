@@ -12,8 +12,8 @@ architecture Behavioral of unionModulos is
 	signal aux1, aux2, address, instruction, Crs1, Crs2, aux7, AluResult, aux10: std_logic_vector(31 downto 0) := (others => '0');
 	signal AluOp, Op3, NRs1, NRs2, NRd:  std_logic_vector(5 downto 0) := (others => '0');
 	signal rs1, rs2, rd : std_logic_vector(4 downto 0) := (others => '0');
-	signal Op: std_logic_vector(1 downto 0) := (others => '0');
-	signal ncwp, cwp, Carry, icc: std_logic := '0';
+	signal Op, PcSource, RfSource, ReENMemory, WrENMemory: std_logic_vector(1 downto 0) := (others => '0');
+	signal ncwp, cwp, Carry, icc, weRF, RFDest: std_logic := '0';
 	signal imm13: std_logic_vector(12 downto 0) := (others => '0');
 	signal NZVC, cond: std_logic_vector(3 downto 0) := (others => '0');
 
@@ -43,7 +43,8 @@ architecture Behavioral of unionModulos is
 	end component;
 	
 	component registerFile
-    Port ( rs1 : in  STD_LOGIC_VECTOR (5 downto 0);
+    Port ( we : in  STD_LOGIC;
+			  rs1 : in  STD_LOGIC_VECTOR (5 downto 0);
            rs2 : in  STD_LOGIC_VECTOR (5 downto 0);
            rd : in  STD_LOGIC_VECTOR (5 downto 0);
            rst : in  STD_LOGIC;
@@ -56,8 +57,16 @@ architecture Behavioral of unionModulos is
 	
 	component UnityControl
 		Port ( Op : in  STD_LOGIC_VECTOR (1 downto 0);
-				 Op3 : in  STD_LOGIC_VECTOR (5 downto 0);
-				 AluOp : out  STD_LOGIC_VECTOR (5 downto 0)
+           Op3 : in  STD_LOGIC_VECTOR (5 downto 0);
+			  cond : in  STD_LOGIC_VECTOR (3 downto 0);
+			  icc : in  STD_LOGIC;
+			  we : out  STD_LOGIC;
+			  RFDest : out  STD_LOGIC;
+			  WrENMemory : out  STD_LOGIC;
+			  ReENMemory : out  STD_LOGIC;
+			  RfSource : out  STD_LOGIC_VECTOR(1 downto 0);
+			  PcSource : out  STD_LOGIC_VECTOR(1 downto 0);
+           AluOp : out  STD_LOGIC_VECTOR (5 downto 0)
 		);
 	end component;
 
@@ -177,6 +186,7 @@ begin
 	);
 	
 	Inst_register_file: registerFile port map(
+		we => weRF,
 		rs1 => NRs1,
 		rs2 => NRs2,
 		rd => NRd,
@@ -189,7 +199,15 @@ begin
 	Inst_UC: UnityControl Port Map(
 		Op => Op,
 	   Op3=> Op3,
-      AluOp => AluOp
+      AluOp => AluOp,
+		cond => cond,
+		icc => icc,
+		we => weRF,
+		RFDest => RFDest,
+		WrENMemory => WrENMemory,
+		ReENMemory => ReENMemory,
+		RfSource => RfSource,
+		PcSource => PcSource
 	);
 	
 	Inst_Sign_ext_unit: SignExtender port map (
