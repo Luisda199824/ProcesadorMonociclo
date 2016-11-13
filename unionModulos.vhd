@@ -9,7 +9,7 @@ end unionModulos;
 
 architecture Behavioral of unionModulos is
 
-	signal aux1, PcCounterPlus, PC, aux2, address, instruction, Crs1, Crs2, cRD, aux7, AluResult, aux10, DataToMem, DataToReg, SEU_Disp30_Out, SEU_Disp22_Out: std_logic_vector(31 downto 0) := (others => '0');
+	signal aux1, PcCounterPlus, PC, aux2, address, instruction, Crs1, Crs2, cRD, aux7, AluResult, aux10, DataToMem, DataToReg, SEU_Disp30_Out, SEU_Disp22_Out, nPC_Source: std_logic_vector(31 downto 0) := (others => '0');
 	signal AluOp, Op3, NRs1, NRs2, NRd, Mux_NRd:  std_logic_vector(5 downto 0) := (others => '0');
 	signal rs1, rs2, rd : std_logic_vector(4 downto 0) := (others => '0');
 	signal Op, PcSource, RfSource: std_logic_vector(1 downto 0) := (others => '0');
@@ -174,7 +174,7 @@ begin
 	Inst_pc: ProgrammingCounter port map (
 		clk => clk,
 		rst => rst,
-		dato => aux2,
+		dato => nPC_Source,
 		PCOut => aux1
 	);
 
@@ -243,7 +243,7 @@ begin
 		rs2 => NRs2,
 		rd => Mux_NRd,
 		rst => rst,
-		dataToWrite => AluResult,
+		dataToWrite => DataToReg,
 		CRs1 => Crs1,
 		CRs2 => aux7,
 		CRd => cRD
@@ -297,7 +297,7 @@ begin
 		cRD => cRD,
 		AluResult => AluResult,
 		WrENMem => WrENMemory,
-		RdENMem => RdENMemory,
+		RdENMem => ReENMemory,
 		Data => DataToMem
 	);
 	

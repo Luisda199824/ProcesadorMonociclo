@@ -16,7 +16,7 @@ architecture Behavioral of PSR is
 
 begin
 
-process(rst, clk, nzvc)
+process(rst, clk, nzvc, cond, ncwp)
 	begin
 		if rst='1' then
 			carry <= '0';
