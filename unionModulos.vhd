@@ -9,13 +9,15 @@ end unionModulos;
 
 architecture Behavioral of unionModulos is
 
-	signal PC, aux2, address, instruction, Crs1, Crs2, cRD, aux7, AluResult, aux10, DataToMem, DataToReg: std_logic_vector(31 downto 0) := (others => '0');
+	signal PC, aux2, address, instruction, Crs1, Crs2, cRD, aux7, AluResult, aux10, DataToMem, DataToReg, SEU_Disp30, SEU_Disp22: std_logic_vector(31 downto 0) := (others => '0');
 	signal AluOp, Op3, NRs1, NRs2, NRd, Mux_NRd:  std_logic_vector(5 downto 0) := (others => '0');
 	signal rs1, rs2, rd : std_logic_vector(4 downto 0) := (others => '0');
 	signal Op, PcSource, RfSource, ReENMemory, WrENMemory: std_logic_vector(1 downto 0) := (others => '0');
 	signal ncwp, cwp, Carry, icc, weRF, RFDest: std_logic := '0';
 	signal imm13: std_logic_vector(12 downto 0) := (others => '0');
 	signal NZVC, cond: std_logic_vector(3 downto 0) := (others => '0');
+	signal disp30 : std_logic_vector(29 downto 0) := (others => '0');
+	signal disp22 : std_logic_vector(21 downto 0) := (others => '0');
 
 	component ProgrammingCounter
 		port (
@@ -141,6 +143,16 @@ architecture Behavioral of unionModulos is
 				  SEOut : out  STD_LOGIC_VECTOR (31 downto 0));
 	end component;
 	
+	component SEU_Disp30
+		Port ( Disp30 : in  STD_LOGIC_VECTOR (29 downto 0);
+           SEU_Disp30 : out  STD_LOGIC_VECTOR (31 downto 0));
+	end component;
+	
+	component SEU_Disp22
+		Port ( Disp22 : in  STD_LOGIC_VECTOR (21 downto 0);
+           Seu_Disp22 : out  STD_LOGIC_VECTOR (31 downto 0));
+	end component;
+	
 	component DataRF_Mux
 		Port ( RfSource : in  STD_LOGIC_VECTOR (1 downto 0);
 				 DataToMem : in  STD_LOGIC_VECTOR (31 downto 0);
@@ -184,6 +196,8 @@ begin
 	Op3 <= instruction(24 downto 19);
 	imm13 <= instruction(12 downto 0);
 	cond <= instruction(28 downto 25);
+	disp30 <= instruction(29 downto 0);
+	disp22 <= instruction(21 downto 0);
 	
 	Inst_WindowsManager: WindowsManager Port Map ( 
 		rs1 => rs1,
@@ -279,14 +293,24 @@ begin
 		Data => DataToMem
 	);
 	
-	salida <= AluResult;
-	
-	Inst_DataRf_Mux: DataRF_Mux port map(
+	Inst_DataRf_Mux: DataRF_Mux port map (
 		RfSource => RfSource,
 		DataToMem => DataToMem,
 		AluResult => AluResult,
 		PC => PC,
  		DataToReg => DataToReg
 	);
+	
+	Inst_SeuDisp30: SEU_Disp30 port map ( 
+		Disp30 => disp30,
+		SEU_Disp30 => SEU_Disp30
+	);
+	
+	Inst_SeuDisp22: SEU_Disp22 port map (
+		Disp22 => disp22,
+      Seu_Disp22 => Seu_Disp22
+	);
+	
+	salida <= AluResult;
 	
 end Behavioral;
