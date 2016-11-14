@@ -85,14 +85,15 @@ LAB13:    t13 = (t0 + 5949);
 
 LAB14:
 LAB10:    xsi_set_current_line(31, ng0);
-    t1 = (t0 + 5951);
-    t4 = (t0 + 3552);
-    t5 = (t4 + 56U);
-    t7 = *((char **)t5);
-    t8 = (t7 + 56U);
-    t10 = *((char **)t8);
-    memcpy(t10, t1, 32U);
-    xsi_driver_first_trans_fast_port(t4);
+    t1 = (t0 + 1512U);
+    t3 = *((char **)t1);
+    t1 = (t0 + 3552);
+    t4 = (t1 + 56U);
+    t5 = *((char **)t4);
+    t7 = (t5 + 56U);
+    t8 = *((char **)t7);
+    memcpy(t8, t3, 32U);
+    xsi_driver_first_trans_fast_port(t1);
 
 LAB5:    goto LAB3;
 

@@ -13,9 +13,9 @@ architecture Behavioral of unionModulos is
 	signal AluOp, Op3, NRs1, NRs2, NRd, Mux_NRd:  std_logic_vector(5 downto 0) := (others => '0');
 	signal rs1, rs2, rd : std_logic_vector(4 downto 0) := (others => '0');
 	signal Op, PcSource, RfSource: std_logic_vector(1 downto 0) := (others => '0');
-	signal ncwp, cwp, Carry, icc, weRF, RFDest, ReENMemory, WrENMemory: std_logic := '0';
+	signal ncwp, cwp, Carry, weRF, RFDest, ReENMemory, WrENMemory: std_logic := '0';
 	signal imm13: std_logic_vector(12 downto 0) := (others => '0');
-	signal NZVC, cond: std_logic_vector(3 downto 0) := (others => '0');
+	signal NZVC, cond, icc: std_logic_vector(3 downto 0) := (others => '0');
 	signal disp30 : std_logic_vector(29 downto 0) := (others => '0');
 	signal disp22 : std_logic_vector(21 downto 0) := (others => '0');
 
@@ -76,7 +76,7 @@ architecture Behavioral of unionModulos is
 		Port ( Op : in  STD_LOGIC_VECTOR (1 downto 0);
            Op3 : in  STD_LOGIC_VECTOR (5 downto 0);
 			  cond : in  STD_LOGIC_VECTOR (3 downto 0);
-			  icc : in  STD_LOGIC;
+			  icc : in  STD_LOGIC_VECTOR (3 downto 0);
 			  we : out  STD_LOGIC;
 			  RFDest : out  STD_LOGIC;
 			  WrENMemory : out  STD_LOGIC;
@@ -126,7 +126,7 @@ architecture Behavioral of unionModulos is
 			  cond : in STD_LOGIC_VECTOR (3 downto 0);
            carry : out  STD_LOGIC;
 			  cwp : out STD_LOGIC;
-			  icc : out STD_LOGIC);
+			  icc : out STD_LOGIC_VECTOR (3 downto 0));
 	end component;
 	
 	component Mux32B
