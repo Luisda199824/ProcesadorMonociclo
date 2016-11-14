@@ -15,21 +15,21 @@ architecture Behavioral of PC_Mux is
 
 begin
 
-process(clk, PcSource, Pc, AluResult, Pc_Disp22, Pc_Disp30)
+process(clk)
 begin
-	if rising_edge(clk) then
-	case PcSource is
-		when "00" =>
-			nPC_Source <= Pc;
-		when "01" =>
-			nPC_Source <= Pc_Disp22;
-		when "10" =>
-			nPC_Source <= Pc_Disp30;
-		when "11" =>
-			nPC_Source <= AluResult;
-		when others =>
-			nPC_Source <= Pc;
-	end case;
+	if rising_edge(clk)then
+		case PcSource is
+			when "00" =>
+				nPC_Source <= Pc;
+			when "01" =>
+				nPC_Source <= Pc_Disp22;
+			when "10" =>
+				nPC_Source <= Pc_Disp30;
+			when "11" =>
+				nPC_Source <= AluResult;
+			when others =>
+				nPC_Source <= Pc;
+		end case;
 	end if;
 end process;
 

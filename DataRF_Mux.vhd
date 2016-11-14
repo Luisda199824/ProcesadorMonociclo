@@ -2,7 +2,8 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity DataRF_Mux is
-    Port ( RfSource : in  STD_LOGIC_VECTOR (1 downto 0);
+    Port ( clk : in  STD_LOGIC;
+			  RfSource : in  STD_LOGIC_VECTOR (1 downto 0);
            DataToMem : in  STD_LOGIC_VECTOR (31 downto 0);
            AluResult : in  STD_LOGIC_VECTOR (31 downto 0);
            PC : in  STD_LOGIC_VECTOR (31 downto 0);
@@ -13,7 +14,7 @@ architecture Behavioral of DataRF_Mux is
 
 begin
 
-process(RfSource, DataToMem, AluResult, PC)
+process(RfSource, PC)
 begin
 	case RfSource is
 		when "00" =>

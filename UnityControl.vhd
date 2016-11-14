@@ -139,11 +139,11 @@ begin
 			WrENMemory <= '0';
 			ReENMemory <= '0';
 		when "01" => -- Call
-			we <= '0';
-			RFDest <= '0';
+			we <= '1';
+			RFDest <= '1';
 			WrENMemory <= '0';
 			ReENMemory <= '0';
-			RfSource <= "00";
+			RfSource <= "01";
 			PcSource <= "10";
 			AluOp <= "000000";
 		when "00" =>  -- Branch

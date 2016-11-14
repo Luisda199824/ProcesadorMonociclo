@@ -163,7 +163,8 @@ architecture Behavioral of unionModulos is
 	end component;
 	
 	component DataRF_Mux
-		Port ( RfSource : in  STD_LOGIC_VECTOR (1 downto 0);
+		Port ( clk :  in  STD_LOGIC;
+				 RfSource : in  STD_LOGIC_VECTOR (1 downto 0);
 				 DataToMem : in  STD_LOGIC_VECTOR (31 downto 0);
 				 AluResult : in  STD_LOGIC_VECTOR (31 downto 0);
 				 PC : in  STD_LOGIC_VECTOR (31 downto 0);
@@ -303,6 +304,7 @@ begin
 	);
 	
 	Inst_DataRf_Mux: DataRF_Mux port map (
+		clk => clk,
 		RfSource => RfSource,
 		DataToMem => DataToMem,
 		AluResult => AluResult,

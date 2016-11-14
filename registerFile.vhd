@@ -29,23 +29,27 @@ begin
 		CRs1 <= ceros;
 		CRs2 <= ceros;
 		CRd <= ceros;
-	else
+	elsif (we = '1') then
 		if (conv_integer(rs1) = 0) then
 			CRs1 <= ceros;
 		else
 			CRs1 <= regFile(conv_integer(rs1));
 		end if;
+		
 		if (conv_integer(rs2) = 0) then
 			CRs2 <= ceros;
 		else
 			CRs2 <= regFile(conv_integer(rs2));
 		end if;
+		
 		if (not (rd = "00000")) then
-			if (we = '1') then
 				regFile(conv_integer(rd)) <= dataToWrite;
-			end if;
 		end if;
 		CRd <= regFile(conv_integer(rd));
+	else
+		CRs1 <= ceros;
+		CRs2 <= ceros;
+		CRd <= ceros;
 	end if;
 end process;
 

@@ -5,8 +5,5 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1196" delta="unknown" >"C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/InstructionMemory.vhd" Line 24: Readline called past the end of file <arg fmt="%s" index="1">romfile</arg>
-</msg>
-
 </messages>
 
