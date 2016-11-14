@@ -28,12 +28,8 @@ at 0 ps, Instance /tb_procesador/uut/Inst_WindowsManager/ : Warning: CONV_INTEGE
 at 0 ps, Instance /tb_procesador/uut/Inst_WindowsManager/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 at 0 ps, Instance /tb_procesador/uut/Inst_WindowsManager/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 at 0 ps, Instance /tb_procesador/uut/Inst_WindowsManager/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-ERROR: Index 32 out of bound 0 to 31. 
-ERROR: In process InstructionMemory.vhd:35 
- 
-INFO: Simulator is stopped.
 # restart
-# run all
+# run 1.00us
 Simulator is doing circuit initialization process.
 at 0 ps, Instance /tb_procesador/uut/Inst_instructionMemory/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 at 0 ps, Instance /tb_procesador/uut/Inst_register_file/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
@@ -52,7 +48,3 @@ at 0 ps, Instance /tb_procesador/uut/Inst_WindowsManager/ : Warning: CONV_INTEGE
 at 0 ps, Instance /tb_procesador/uut/Inst_WindowsManager/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 at 0 ps, Instance /tb_procesador/uut/Inst_WindowsManager/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 at 0 ps, Instance /tb_procesador/uut/Inst_WindowsManager/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-ERROR: Index 32 out of bound 0 to 31. 
-ERROR: In process InstructionMemory.vhd:35 
- 
-INFO: Simulator is stopped.
