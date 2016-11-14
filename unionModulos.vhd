@@ -306,7 +306,7 @@ begin
 		RfSource => RfSource,
 		DataToMem => DataToMem,
 		AluResult => AluResult,
-		PC => PC,
+		PC => address,
  		DataToReg => DataToReg
 	);
 	

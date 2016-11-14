@@ -123,15 +123,15 @@ begin
 		if (Op3 = "111000") then
 			RfSource <= "01";
 			RFDest <= '1';
+			PcSource <= "11";
 		else
 			RfSource <= "00";
 			RFDest <= '0';
+			PcSource <= "00";
 		end if;
 		we <= '1';
-		RFDest <= '0';
 		WrENMemory <= '0';
 		ReENMemory <= '0';
-		PcSource <= "00";
 	elsif (op = "00") then -- Branch
 		we <= '0';
 		RFDest <= '0';
