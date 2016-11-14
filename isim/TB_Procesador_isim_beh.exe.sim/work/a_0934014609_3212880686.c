@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/PSR_Modifier.vhd";
+static const char *ng0 = "C:/Users/Lenovo_PC/Desktop/ProcesadorMonociclo/PSR_Modifier.vhd";
 extern char *IEEE_P_3620187407;
 extern char *IEEE_P_2592010699;
 
@@ -124,8 +124,8 @@ LAB0:    xsi_set_current_line(34, ng0);
 LAB4:    xsi_set_current_line(38, ng0);
     t1 = (t0 + 1032U);
     t2 = *((char **)t1);
-    t1 = (t0 + 5624U);
-    t5 = (t0 + 5819);
+    t1 = (t0 + 5408U);
+    t5 = (t0 + 5603);
     t7 = (t14 + 0U);
     t8 = (t7 + 0U);
     *((int *)t8) = 0;
@@ -144,8 +144,8 @@ LAB4:    xsi_set_current_line(38, ng0);
 
 LAB21:    t8 = (t0 + 1032U);
     t9 = *((char **)t8);
-    t8 = (t0 + 5624U);
-    t10 = (t0 + 5825);
+    t8 = (t0 + 5408U);
+    t10 = (t0 + 5609);
     t20 = (t19 + 0U);
     t21 = (t20 + 0U);
     *((int *)t21) = 0;
@@ -166,8 +166,8 @@ LAB22:    if (t13 == 1)
 
 LAB18:    t21 = (t0 + 1032U);
     t24 = *((char **)t21);
-    t21 = (t0 + 5624U);
-    t25 = (t0 + 5831);
+    t21 = (t0 + 5408U);
+    t25 = (t0 + 5615);
     t28 = (t27 + 0U);
     t29 = (t28 + 0U);
     *((int *)t29) = 0;
@@ -188,8 +188,8 @@ LAB19:    if (t12 == 1)
 
 LAB15:    t29 = (t0 + 1032U);
     t32 = *((char **)t29);
-    t29 = (t0 + 5624U);
-    t33 = (t0 + 5837);
+    t29 = (t0 + 5408U);
+    t33 = (t0 + 5621);
     t36 = (t35 + 0U);
     t37 = (t36 + 0U);
     *((int *)t37) = 0;
@@ -210,8 +210,8 @@ LAB16:    if (t11 == 1)
 
 LAB12:    t37 = (t0 + 1032U);
     t40 = *((char **)t37);
-    t37 = (t0 + 5624U);
-    t41 = (t0 + 5843);
+    t37 = (t0 + 5408U);
+    t41 = (t0 + 5627);
     t44 = (t43 + 0U);
     t45 = (t44 + 0U);
     *((int *)t45) = 0;
@@ -232,8 +232,8 @@ LAB13:    if (t4 == 1)
 
 LAB9:    t45 = (t0 + 1032U);
     t48 = *((char **)t45);
-    t45 = (t0 + 5624U);
-    t49 = (t0 + 5849);
+    t45 = (t0 + 5408U);
+    t49 = (t0 + 5633);
     t52 = (t51 + 0U);
     t53 = (t52 + 0U);
     *((int *)t53) = 0;
@@ -256,8 +256,8 @@ LAB7:
 LAB6:    xsi_set_current_line(50, ng0);
     t1 = (t0 + 1032U);
     t2 = *((char **)t1);
-    t1 = (t0 + 5624U);
-    t5 = (t0 + 5855);
+    t1 = (t0 + 5408U);
+    t5 = (t0 + 5639);
     t7 = (t14 + 0U);
     t8 = (t7 + 0U);
     *((int *)t8) = 0;
@@ -276,8 +276,8 @@ LAB6:    xsi_set_current_line(50, ng0);
 
 LAB30:    t8 = (t0 + 1032U);
     t9 = *((char **)t8);
-    t8 = (t0 + 5624U);
-    t10 = (t0 + 5861);
+    t8 = (t0 + 5408U);
+    t10 = (t0 + 5645);
     t20 = (t19 + 0U);
     t21 = (t20 + 0U);
     *((int *)t21) = 0;
@@ -300,8 +300,8 @@ LAB28:
 LAB27:    xsi_set_current_line(62, ng0);
     t1 = (t0 + 1032U);
     t2 = *((char **)t1);
-    t1 = (t0 + 5624U);
-    t5 = (t0 + 5867);
+    t1 = (t0 + 5408U);
+    t5 = (t0 + 5651);
     t7 = (t14 + 0U);
     t8 = (t7 + 0U);
     *((int *)t8) = 0;
@@ -320,8 +320,8 @@ LAB27:    xsi_set_current_line(62, ng0);
 
 LAB39:    t8 = (t0 + 1032U);
     t9 = *((char **)t8);
-    t8 = (t0 + 5624U);
-    t10 = (t0 + 5873);
+    t8 = (t0 + 5408U);
+    t10 = (t0 + 5657);
     t20 = (t19 + 0U);
     t21 = (t20 + 0U);
     *((int *)t21) = 0;
@@ -347,7 +347,7 @@ LAB3:    t1 = (t0 + 3312);
 
 LAB1:    return;
 LAB2:    xsi_set_current_line(35, ng0);
-    t1 = (t0 + 5815);
+    t1 = (t0 + 5599);
     t6 = (t0 + 3392);
     t7 = (t6 + 56U);
     t8 = *((char **)t7);
@@ -376,7 +376,7 @@ LAB5:    xsi_set_current_line(39, ng0);
     xsi_set_current_line(40, ng0);
     t1 = (t0 + 1512U);
     t2 = *((char **)t1);
-    t1 = (t0 + 5672U);
+    t1 = (t0 + 5456U);
     t15 = ieee_p_3620187407_sub_514432868_3965413181(IEEE_P_3620187407, t2, t1);
     t3 = (t15 == 0);
     if (t3 != 0)
@@ -453,7 +453,7 @@ LAB26:    xsi_set_current_line(51, ng0);
     xsi_set_current_line(52, ng0);
     t1 = (t0 + 1512U);
     t2 = *((char **)t1);
-    t1 = (t0 + 5672U);
+    t1 = (t0 + 5456U);
     t15 = ieee_p_3620187407_sub_514432868_3965413181(IEEE_P_3620187407, t2, t1);
     t3 = (t15 == 0);
     if (t3 != 0)
@@ -619,7 +619,7 @@ LAB35:    xsi_set_current_line(63, ng0);
     xsi_set_current_line(64, ng0);
     t1 = (t0 + 1512U);
     t2 = *((char **)t1);
-    t1 = (t0 + 5672U);
+    t1 = (t0 + 5456U);
     t15 = ieee_p_3620187407_sub_514432868_3965413181(IEEE_P_3620187407, t2, t1);
     t3 = (t15 == 0);
     if (t3 != 0)

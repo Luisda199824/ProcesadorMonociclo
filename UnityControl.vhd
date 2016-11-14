@@ -133,12 +133,16 @@ begin
 		WrENMemory <= '0';
 		ReENMemory <= '0';
 	elsif (op = "00") then -- Branch
-		case icc is
-			when '1' =>
-				PcSource <= "01";
-			when others =>
-				PcSource <= "00";
-		end case;
+		we <= '0';
+		RFDest <= '0';
+		WrENMemory <= '0';
+		ReENMemory <= '0';
+		RfSource <= "00";
+		if (icc = '1') then
+			PcSource <= "01";
+		else
+			PcSource <= "00";
+		end if;
 	elsif (op = "01") then -- Call
 		we <= '0';
 		RFDest <= '0';

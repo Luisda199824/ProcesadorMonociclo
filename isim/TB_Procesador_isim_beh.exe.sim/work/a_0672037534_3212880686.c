@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/Mux32B.vhd";
+static const char *ng0 = "C:/Users/Lenovo_PC/Desktop/ProcesadorMonociclo/Mux32B.vhd";
 
 
 

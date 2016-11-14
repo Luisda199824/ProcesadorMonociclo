@@ -16,7 +16,6 @@ ARCHITECTURE behavior OF TB_Procesador IS
         );
     END COMPONENT;
     
-
    --Inputs
    signal clk : std_logic := '0';
    signal rst : std_logic := '0';

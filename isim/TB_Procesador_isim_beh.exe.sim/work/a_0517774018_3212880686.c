@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/SEU_Disp30.vhd";
+static const char *ng0 = "C:/Users/Lenovo_PC/Desktop/ProcesadorMonociclo/SEU_Disp30.vhd";
 extern char *IEEE_P_2592010699;
 
 
@@ -68,7 +68,7 @@ LAB0:    xsi_set_current_line(17, ng0);
         goto LAB2;
 
 LAB4:    xsi_set_current_line(20, ng0);
-    t1 = (t0 + 4580);
+    t1 = (t0 + 4460);
     t9 = (t0 + 1032U);
     t10 = *((char **)t9);
     t11 = ((IEEE_P_2592010699) + 4024);
@@ -84,7 +84,7 @@ LAB4:    xsi_set_current_line(20, ng0);
     t4 = (t4 + 1);
     t14 = (t12 + 12U);
     *((unsigned int *)t14) = t4;
-    t14 = (t0 + 4508U);
+    t14 = (t0 + 4388U);
     t9 = xsi_base_array_concat(t9, t13, t11, (char)97, t1, t15, (char)97, t10, t14, (char)101);
     t4 = (2U + 30U);
     t7 = (32U != t4);
@@ -104,7 +104,7 @@ LAB3:    t1 = (t0 + 2672);
 
 LAB1:    return;
 LAB2:    xsi_set_current_line(18, ng0);
-    t9 = (t0 + 4578);
+    t9 = (t0 + 4458);
     t11 = (t0 + 1032U);
     t12 = *((char **)t11);
     t14 = ((IEEE_P_2592010699) + 4024);
@@ -120,7 +120,7 @@ LAB2:    xsi_set_current_line(18, ng0);
     t19 = (t19 + 1);
     t17 = (t16 + 12U);
     *((unsigned int *)t17) = t19;
-    t17 = (t0 + 4508U);
+    t17 = (t0 + 4388U);
     t11 = xsi_base_array_concat(t11, t13, t14, (char)97, t9, t15, (char)97, t12, t17, (char)101);
     t19 = (2U + 30U);
     t20 = (32U != t19);
