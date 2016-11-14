@@ -9,7 +9,7 @@ end unionModulos;
 
 architecture Behavioral of unionModulos is
 
-	signal aux1, PcCounterPlus, PC, aux2, address, instruction, Crs1, Crs2, cRD, aux7, AluResult, aux10, DataToMem, DataToReg, SEU_Disp30_Out, SEU_Disp22_Out, nPC_Source: std_logic_vector(31 downto 0) := (others => '0');
+	signal SumDisp22, SumDisp30, aux1, PcCounterPlus, PC, aux2, address, instruction, Crs1, Crs2, cRD, aux7, AluResult, aux10, DataToMem, DataToReg, SEU_Disp30_Out, SEU_Disp22_Out, nPC_Source: std_logic_vector(31 downto 0) := (others => '0');
 	signal AluOp, Op3, NRs1, NRs2, NRd, Mux_NRd:  std_logic_vector(5 downto 0) := (others => '0');
 	signal rs1, rs2, rd : std_logic_vector(4 downto 0) := (others => '0');
 	signal Op, PcSource, RfSource: std_logic_vector(1 downto 0) := (others => '0');
@@ -315,9 +315,21 @@ begin
 		SEU_Disp30_Out => SEU_Disp30_Out
 	);
 	
+	Inst_Disp30_Sumador : Sumador32B port map(
+		A => SEU_Disp30_Out,
+		B => PcCounterPlus,
+		SumOut => SumDisp30
+	);
+	
 	Inst_SeuDisp22: SEU_Disp22 port map (
 		Disp22 => disp22,
       Seu_Disp22_Out => Seu_Disp22_Out
+	);
+	
+	Inst_Disp22_Sumador : Sumador32B port map(
+		A => SEU_Disp22_Out,
+		B => PcCounterPlus,
+		SumOut => SumDisp22
 	);
 	
 	Inst_PcMux: PC_Mux port map (
@@ -325,8 +337,8 @@ begin
 		PcSource => PcSource,
 		AluResult => AluResult,
 		Pc => PcCounterPlus,
-		Pc_Disp22 => Seu_Disp22_Out,
-		Pc_Disp30 => Seu_Disp30_Out,
+		Pc_Disp22 => SumDisp22,
+		Pc_Disp30 => SumDisp30,
 		nPC_Source => nPC_Source
 	);
 	
