@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/Lenovo_PC/Desktop/ProcesadorMonociclo/PC_Mux.vhd";
+static const char *ng0 = "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/PC_Mux.vhd";
 extern char *IEEE_P_2592010699;
 
 unsigned char ieee_p_2592010699_sub_1744673427_503743352(char *, char *, unsigned int , unsigned int );
@@ -63,29 +63,29 @@ LAB1:    return;
 LAB2:    xsi_set_current_line(21, ng0);
     t3 = (t0 + 1192U);
     t4 = *((char **)t3);
-    t3 = (t0 + 5703);
+    t3 = (t0 + 5943);
     t6 = xsi_mem_cmp(t3, t4, 2U);
     if (t6 == 1)
         goto LAB6;
 
-LAB11:    t7 = (t0 + 5705);
+LAB11:    t7 = (t0 + 5945);
     t9 = xsi_mem_cmp(t7, t4, 2U);
     if (t9 == 1)
         goto LAB7;
 
-LAB12:    t10 = (t0 + 5707);
+LAB12:    t10 = (t0 + 5947);
     t12 = xsi_mem_cmp(t10, t4, 2U);
     if (t12 == 1)
         goto LAB8;
 
-LAB13:    t13 = (t0 + 5709);
+LAB13:    t13 = (t0 + 5949);
     t15 = xsi_mem_cmp(t13, t4, 2U);
     if (t15 == 1)
         goto LAB9;
 
 LAB14:
 LAB10:    xsi_set_current_line(31, ng0);
-    t1 = (t0 + 5711);
+    t1 = (t0 + 5951);
     t4 = (t0 + 3552);
     t5 = (t4 + 56U);
     t7 = *((char **)t5);

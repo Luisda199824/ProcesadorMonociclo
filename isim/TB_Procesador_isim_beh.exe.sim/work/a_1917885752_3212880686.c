@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/Lenovo_PC/Desktop/ProcesadorMonociclo/RF_Mux.vhd";
+static const char *ng0 = "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/RF_Mux.vhd";
 
 
 
@@ -62,7 +62,7 @@ LAB3:    t1 = (t0 + 2832);
 
 LAB1:    return;
 LAB2:    xsi_set_current_line(17, ng0);
-    t1 = (t0 + 4583);
+    t1 = (t0 + 4727);
     t6 = (t0 + 2912);
     t7 = (t6 + 56U);
     t8 = *((char **)t7);

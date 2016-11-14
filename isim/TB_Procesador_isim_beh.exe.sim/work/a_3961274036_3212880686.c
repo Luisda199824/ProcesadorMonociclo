@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/Lenovo_PC/Desktop/ProcesadorMonociclo/PSR.vhd";
+static const char *ng0 = "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/PSR.vhd";
 extern char *IEEE_P_2592010699;
 
 unsigned char ieee_p_2592010699_sub_1690584930_503743352(char *, unsigned char );
@@ -120,82 +120,82 @@ LAB6:    xsi_set_current_line(29, ng0);
     xsi_set_current_line(30, ng0);
     t1 = (t0 + 1672U);
     t2 = *((char **)t1);
-    t1 = (t0 + 5879);
+    t1 = (t0 + 6143);
     t9 = xsi_mem_cmp(t1, t2, 4U);
     if (t9 == 1)
         goto LAB9;
 
-LAB26:    t6 = (t0 + 5883);
+LAB26:    t6 = (t0 + 6147);
     t15 = xsi_mem_cmp(t6, t2, 4U);
     if (t15 == 1)
         goto LAB10;
 
-LAB27:    t8 = (t0 + 5887);
+LAB27:    t8 = (t0 + 6151);
     t16 = xsi_mem_cmp(t8, t2, 4U);
     if (t16 == 1)
         goto LAB11;
 
-LAB28:    t14 = (t0 + 5891);
+LAB28:    t14 = (t0 + 6155);
     t18 = xsi_mem_cmp(t14, t2, 4U);
     if (t18 == 1)
         goto LAB12;
 
-LAB29:    t19 = (t0 + 5895);
+LAB29:    t19 = (t0 + 6159);
     t21 = xsi_mem_cmp(t19, t2, 4U);
     if (t21 == 1)
         goto LAB13;
 
-LAB30:    t22 = (t0 + 5899);
+LAB30:    t22 = (t0 + 6163);
     t24 = xsi_mem_cmp(t22, t2, 4U);
     if (t24 == 1)
         goto LAB14;
 
-LAB31:    t25 = (t0 + 5903);
+LAB31:    t25 = (t0 + 6167);
     t27 = xsi_mem_cmp(t25, t2, 4U);
     if (t27 == 1)
         goto LAB15;
 
-LAB32:    t28 = (t0 + 5907);
+LAB32:    t28 = (t0 + 6171);
     t30 = xsi_mem_cmp(t28, t2, 4U);
     if (t30 == 1)
         goto LAB16;
 
-LAB33:    t31 = (t0 + 5911);
+LAB33:    t31 = (t0 + 6175);
     t33 = xsi_mem_cmp(t31, t2, 4U);
     if (t33 == 1)
         goto LAB17;
 
-LAB34:    t34 = (t0 + 5915);
+LAB34:    t34 = (t0 + 6179);
     t36 = xsi_mem_cmp(t34, t2, 4U);
     if (t36 == 1)
         goto LAB18;
 
-LAB35:    t37 = (t0 + 5919);
+LAB35:    t37 = (t0 + 6183);
     t39 = xsi_mem_cmp(t37, t2, 4U);
     if (t39 == 1)
         goto LAB19;
 
-LAB36:    t40 = (t0 + 5923);
+LAB36:    t40 = (t0 + 6187);
     t42 = xsi_mem_cmp(t40, t2, 4U);
     if (t42 == 1)
         goto LAB20;
 
-LAB37:    t43 = (t0 + 5927);
+LAB37:    t43 = (t0 + 6191);
     t45 = xsi_mem_cmp(t43, t2, 4U);
     if (t45 == 1)
         goto LAB21;
 
-LAB38:    t46 = (t0 + 5931);
+LAB38:    t46 = (t0 + 6195);
     t48 = xsi_mem_cmp(t46, t2, 4U);
     if (t48 == 1)
         goto LAB22;
 
-LAB39:    t49 = (t0 + 5935);
+LAB39:    t49 = (t0 + 6199);
     t51 = xsi_mem_cmp(t49, t2, 4U);
     if (t51 == 1)
         goto LAB23;
 
-LAB40:    t52 = (t0 + 5939);
+LAB40:    t52 = (t0 + 6203);
     t54 = xsi_mem_cmp(t52, t2, 4U);
     if (t54 == 1)
         goto LAB24;

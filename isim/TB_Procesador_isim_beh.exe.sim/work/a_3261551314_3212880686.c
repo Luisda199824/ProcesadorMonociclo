@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/Lenovo_PC/Desktop/ProcesadorMonociclo/DataMemory.vhd";
+static const char *ng0 = "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/DataMemory.vhd";
 extern char *IEEE_P_3620187407;
 
 int ieee_p_3620187407_sub_514432868_3965413181(char *, char *, char *);
@@ -72,7 +72,7 @@ LAB4:    xsi_set_current_line(28, ng0);
         goto LAB7;
 
 LAB9:    xsi_set_current_line(34, ng0);
-    t1 = (t0 + 8227);
+    t1 = (t0 + 8467);
     t5 = (t0 + 3552);
     t6 = (t5 + 56U);
     t7 = *((char **)t6);
@@ -87,7 +87,7 @@ LAB3:    t1 = (t0 + 3472);
 
 LAB1:    return;
 LAB2:    xsi_set_current_line(25, ng0);
-    t1 = (t0 + 8163);
+    t1 = (t0 + 8403);
     t6 = (t0 + 3552);
     t7 = (t6 + 56U);
     t8 = *((char **)t7);
@@ -99,7 +99,7 @@ LAB2:    xsi_set_current_line(25, ng0);
     t1 = xsi_get_transient_memory(2048U);
     memset(t1, 0, 2048U);
     t2 = t1;
-    t5 = (t0 + 8195);
+    t5 = (t0 + 8435);
     t3 = (32U != 0);
     if (t3 == 1)
         goto LAB5;

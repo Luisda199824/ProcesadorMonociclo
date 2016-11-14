@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/Lenovo_PC/Desktop/ProcesadorMonociclo/registerFile.vhd";
+static const char *ng0 = "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/registerFile.vhd";
 extern char *IEEE_P_3620187407;
 
 int ieee_p_3620187407_sub_514432868_3965413181(char *, char *, char *);
@@ -66,7 +66,7 @@ LAB0:    xsi_set_current_line(28, ng0);
 LAB4:    xsi_set_current_line(33, ng0);
     t1 = (t0 + 1192U);
     t2 = *((char **)t1);
-    t1 = (t0 + 7056U);
+    t1 = (t0 + 7392U);
     t10 = ieee_p_3620187407_sub_514432868_3965413181(IEEE_P_3620187407, t2, t1);
     t3 = (t10 == 0);
     if (t3 != 0)
@@ -77,7 +77,7 @@ LAB7:    xsi_set_current_line(36, ng0);
     t2 = *((char **)t1);
     t1 = (t0 + 1192U);
     t5 = *((char **)t1);
-    t1 = (t0 + 7056U);
+    t1 = (t0 + 7392U);
     t10 = ieee_p_3620187407_sub_514432868_3965413181(IEEE_P_3620187407, t5, t1);
     t12 = (t10 - 0);
     t13 = (t12 * 1);
@@ -96,7 +96,7 @@ LAB7:    xsi_set_current_line(36, ng0);
 LAB6:    xsi_set_current_line(38, ng0);
     t1 = (t0 + 1352U);
     t2 = *((char **)t1);
-    t1 = (t0 + 7072U);
+    t1 = (t0 + 7408U);
     t10 = ieee_p_3620187407_sub_514432868_3965413181(IEEE_P_3620187407, t2, t1);
     t3 = (t10 == 0);
     if (t3 != 0)
@@ -107,7 +107,7 @@ LAB10:    xsi_set_current_line(41, ng0);
     t2 = *((char **)t1);
     t1 = (t0 + 1352U);
     t5 = *((char **)t1);
-    t1 = (t0 + 7072U);
+    t1 = (t0 + 7408U);
     t10 = ieee_p_3620187407_sub_514432868_3965413181(IEEE_P_3620187407, t5, t1);
     t12 = (t10 - 0);
     t13 = (t12 * 1);
@@ -126,8 +126,8 @@ LAB10:    xsi_set_current_line(41, ng0);
 LAB9:    xsi_set_current_line(43, ng0);
     t1 = (t0 + 1512U);
     t2 = *((char **)t1);
-    t1 = (t0 + 7088U);
-    t5 = (t0 + 8588);
+    t1 = (t0 + 7424U);
+    t5 = (t0 + 8924);
     t7 = (t17 + 0U);
     t8 = (t7 + 0U);
     *((int *)t8) = 0;
@@ -151,7 +151,7 @@ LAB12:    xsi_set_current_line(48, ng0);
     t2 = *((char **)t1);
     t1 = (t0 + 1512U);
     t5 = *((char **)t1);
-    t1 = (t0 + 7088U);
+    t1 = (t0 + 7424U);
     t10 = ieee_p_3620187407_sub_514432868_3965413181(IEEE_P_3620187407, t5, t1);
     t12 = (t10 - 0);
     t13 = (t12 * 1);
@@ -243,7 +243,7 @@ LAB14:    xsi_set_current_line(45, ng0);
     t11 = *((char **)t8);
     t8 = (t0 + 1512U);
     t16 = *((char **)t8);
-    t8 = (t0 + 7088U);
+    t8 = (t0 + 7424U);
     t12 = ieee_p_3620187407_sub_514432868_3965413181(IEEE_P_3620187407, t16, t8);
     t20 = (t12 - 0);
     t13 = (t20 * 1);

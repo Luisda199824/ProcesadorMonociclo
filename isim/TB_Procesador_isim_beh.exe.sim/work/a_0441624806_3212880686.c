@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/Lenovo_PC/Desktop/ProcesadorMonociclo/DataRF_Mux.vhd";
+static const char *ng0 = "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/DataRF_Mux.vhd";
 
 
 
@@ -47,24 +47,24 @@ static void work_a_0441624806_3212880686_p_0(char *t0)
 LAB0:    xsi_set_current_line(18, ng0);
     t1 = (t0 + 1032U);
     t2 = *((char **)t1);
-    t1 = (t0 + 5230);
+    t1 = (t0 + 5422);
     t4 = xsi_mem_cmp(t1, t2, 2U);
     if (t4 == 1)
         goto LAB3;
 
-LAB7:    t5 = (t0 + 5232);
+LAB7:    t5 = (t0 + 5424);
     t7 = xsi_mem_cmp(t5, t2, 2U);
     if (t7 == 1)
         goto LAB4;
 
-LAB8:    t8 = (t0 + 5234);
+LAB8:    t8 = (t0 + 5426);
     t10 = xsi_mem_cmp(t8, t2, 2U);
     if (t10 == 1)
         goto LAB5;
 
 LAB9:
 LAB6:    xsi_set_current_line(26, ng0);
-    t1 = (t0 + 5236);
+    t1 = (t0 + 5428);
     t3 = (t0 + 3232);
     t5 = (t3 + 56U);
     t6 = *((char **)t5);

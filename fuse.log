@@ -1,27 +1,27 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Lenovo_PC/Desktop/ProcesadorMonociclo/TB_Procesador_isim_beh.exe -prj C:/Users/Lenovo_PC/Desktop/ProcesadorMonociclo/TB_Procesador_beh.prj work.TB_Procesador 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/TB_Procesador_isim_beh.exe -prj C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/TB_Procesador_beh.prj work.TB_Procesador 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Parsing VHDL file "C:/Users/Lenovo_PC/Desktop/ProcesadorMonociclo/WindowsManager.vhd" into library work
-Parsing VHDL file "C:/Users/Lenovo_PC/Desktop/ProcesadorMonociclo/UnityControl.vhd" into library work
-Parsing VHDL file "C:/Users/Lenovo_PC/Desktop/ProcesadorMonociclo/Sumador32B.vhd" into library work
-Parsing VHDL file "C:/Users/Lenovo_PC/Desktop/ProcesadorMonociclo/SignExtender.vhd" into library work
-Parsing VHDL file "C:/Users/Lenovo_PC/Desktop/ProcesadorMonociclo/SEU_Disp30.vhd" into library work
-Parsing VHDL file "C:/Users/Lenovo_PC/Desktop/ProcesadorMonociclo/SEU_Disp22.vhd" into library work
-Parsing VHDL file "C:/Users/Lenovo_PC/Desktop/ProcesadorMonociclo/RF_Mux.vhd" into library work
-Parsing VHDL file "C:/Users/Lenovo_PC/Desktop/ProcesadorMonociclo/registerFile.vhd" into library work
-Parsing VHDL file "C:/Users/Lenovo_PC/Desktop/ProcesadorMonociclo/PSR_Modifier.vhd" into library work
-Parsing VHDL file "C:/Users/Lenovo_PC/Desktop/ProcesadorMonociclo/PSR.vhd" into library work
-Parsing VHDL file "C:/Users/Lenovo_PC/Desktop/ProcesadorMonociclo/ProgrammingCounter.vhd" into library work
-Parsing VHDL file "C:/Users/Lenovo_PC/Desktop/ProcesadorMonociclo/PC_Mux.vhd" into library work
-Parsing VHDL file "C:/Users/Lenovo_PC/Desktop/ProcesadorMonociclo/Mux32B.vhd" into library work
-Parsing VHDL file "C:/Users/Lenovo_PC/Desktop/ProcesadorMonociclo/InstructionMemory.vhd" into library work
-Parsing VHDL file "C:/Users/Lenovo_PC/Desktop/ProcesadorMonociclo/DataRF_Mux.vhd" into library work
-Parsing VHDL file "C:/Users/Lenovo_PC/Desktop/ProcesadorMonociclo/DataMemory.vhd" into library work
-Parsing VHDL file "C:/Users/Lenovo_PC/Desktop/ProcesadorMonociclo/Alu.vhd" into library work
-Parsing VHDL file "C:/Users/Lenovo_PC/Desktop/ProcesadorMonociclo/unionModulos.vhd" into library work
-Parsing VHDL file "C:/Users/Lenovo_PC/Desktop/ProcesadorMonociclo/TB_Procesador.vhd" into library work
+Parsing VHDL file "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/WindowsManager.vhd" into library work
+Parsing VHDL file "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/UnityControl.vhd" into library work
+Parsing VHDL file "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/Sumador32B.vhd" into library work
+Parsing VHDL file "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/SignExtender.vhd" into library work
+Parsing VHDL file "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/SEU_Disp30.vhd" into library work
+Parsing VHDL file "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/SEU_Disp22.vhd" into library work
+Parsing VHDL file "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/RF_Mux.vhd" into library work
+Parsing VHDL file "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/registerFile.vhd" into library work
+Parsing VHDL file "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/PSR_Modifier.vhd" into library work
+Parsing VHDL file "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/PSR.vhd" into library work
+Parsing VHDL file "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/ProgrammingCounter.vhd" into library work
+Parsing VHDL file "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/PC_Mux.vhd" into library work
+Parsing VHDL file "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/Mux32B.vhd" into library work
+Parsing VHDL file "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/InstructionMemory.vhd" into library work
+Parsing VHDL file "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/DataRF_Mux.vhd" into library work
+Parsing VHDL file "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/DataMemory.vhd" into library work
+Parsing VHDL file "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/Alu.vhd" into library work
+Parsing VHDL file "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/unionModulos.vhd" into library work
+Parsing VHDL file "C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/TB_Procesador.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
@@ -52,6 +52,6 @@ Compiling architecture behavior of entity tb_procesador
 Time Resolution for simulation is 1ps.
 Waiting for 16 sub-compilation(s) to finish...
 Compiled 43 VHDL Units
-Built simulation executable C:/Users/Lenovo_PC/Desktop/ProcesadorMonociclo/TB_Procesador_isim_beh.exe
-Fuse Memory Usage: 38028 KB
-Fuse CPU Usage: 796 ms
+Built simulation executable C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/TB_Procesador_isim_beh.exe
+Fuse Memory Usage: 38152 KB
+Fuse CPU Usage: 905 ms

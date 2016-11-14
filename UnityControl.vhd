@@ -138,10 +138,10 @@ begin
 		WrENMemory <= '0';
 		ReENMemory <= '0';
 		RfSource <= "00";
-		if (icc = '1') then
-			PcSource <= "01";
-		else
+		if (icc = '0') then
 			PcSource <= "00";
+		else
+			PcSource <= "01";
 		end if;
 	elsif (op = "01") then -- Call
 		we <= '0';
