@@ -19,7 +19,7 @@ process(AluOp, rs1, rs2, c)
 	begin
 		case (AluOp) is
 			when "000000" => -- Add
-				AluResult <= rs1 + rs2;
+				AluResult <= rs1 - rs2;
 			when "000001" => -- Sub
 				AluResult <= rs1 - rs2;
 			when "000010" => -- Or

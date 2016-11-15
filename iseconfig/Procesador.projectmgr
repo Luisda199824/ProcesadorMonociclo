@@ -9,13 +9,13 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Inst_PSR - PSR - Behavioral (C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/PSR.vhd)</SelectedItem>
+         <SelectedItem>Inst_PcMux - PC_Mux - Behavioral (C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/PC_Mux.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000251000000020000000000000000000000000200000064ffffffff000000810000000300000002000002510000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>Inst_PSR - PSR - Behavioral (C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/PSR.vhd)</CurrentItem>
+      <CurrentItem>Inst_PcMux - PC_Mux - Behavioral (C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/PC_Mux.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
@@ -30,7 +30,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000104000000010000000100000000000000000000000064ffffffff000000810000000000000001000001040000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000d5000000010000000100000000000000000000000064ffffffff000000810000000000000001000000d50000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -43,7 +43,7 @@
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000027d000000040101000100000000000000000000000064ffffffff000000810000000000000004000000a700000001000000000000004400000001000000000000006600000001000000000000012c0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>alu.vhd</CurrentItem>
+      <CurrentItem>Alu.vhd</CurrentItem>
    </ItemView>
    <ItemView guiview="Library" >
       <ClosedNodes>
@@ -63,6 +63,7 @@
          <ClosedNode>/TB_Alu - behavior C:|Users|Lenovo_PC|Universidad|Arquitectura de Computadores|Procesador|TB_Alu.vhd</ClosedNode>
          <ClosedNode>/TB_Alu - behavior C:|Users|Usuario UTP|Luisda|ProcesadorMonociclo|TB_Alu.vhd</ClosedNode>
          <ClosedNode>/TB_Alu - behavior C:|Users|utp.CRIE|Desktop|Procesador|TB_Alu.vhd</ClosedNode>
+         <ClosedNode>/TB_DataMemory - behavior C:|Users|Lenovo_PC|Universidad|Arquitectura de Computadores|Procesador|TB_DataMemory.vhd</ClosedNode>
          <ClosedNode>/TB_InstructionMemory - behavior C:|Users|Lenovo_PC|Universidad|Arquitectura de Computadores|Procesador|TB_InstructionMemory.vhd</ClosedNode>
          <ClosedNode>/TB_InstructionMemory - behavior C:|Users|Usuario UTP|Luisda|ProcesadorMonociclo|TB_InstructionMemory.vhd</ClosedNode>
          <ClosedNode>/TB_InstructionMemory - behavior C:|Users|utp.CRIE|Desktop|Procesador|TB_InstructionMemory.vhd</ClosedNode>
@@ -91,13 +92,13 @@
          <ClosedNode>/unionModulos - Behavioral C:|Users|Usuario UTP|Luisda|ProcesadorMonociclo|unionModulos.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>xc3s500e-5ft256</SelectedItem>
+         <SelectedItem>TB_Procesador - behavior (C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/TB_Procesador.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001af000000020000000000000000000000000200000064ffffffff000000810000000300000002000001af0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>xc3s500e-5ft256</CurrentItem>
+      <CurrentItem>TB_Procesador - behavior (C:/Users/Lenovo_PC/Universidad/Arquitectura de Computadores/Procesador/TB_Procesador.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -109,7 +110,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000104000000010000000100000000000000000000000064ffffffff000000810000000000000001000001040000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000d5000000010000000100000000000000000000000064ffffffff000000810000000000000001000000d50000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -118,28 +119,28 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000104000000010000000100000000000000000000000064ffffffff000000810000000000000001000001040000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000d5000000010000000100000000000000000000000064ffffffff000000810000000000000001000000d50000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000013d0000009901000000050100000002</SourceProcessView>
-   <CurrentView>Implementation</CurrentView>
+   <CurrentView>Behavioral Simulation</CurrentView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000d7000000010000000100000000000000000000000064ffffffff000000810000000000000001000000d70000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
 </Project>
